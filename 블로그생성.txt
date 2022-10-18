@@ -1,0 +1,57 @@
+1. 루비설치
+2. 커맨드창에서 1엔터
+3. 템플릿 다운로드하기
+4. 커맨드창 열기 -> bundle install 으로 각종 파일 전부 인스톨하기.
+오류확인
+Gemfile -> gem "webrick", "~> 1.7"
+bundle add webrick
+추가
+bundle exec jekyll serve <-- 한번 실행해 본다. 
+
+환경변수 추가 JEKYLL_ENV -> production
+
+
+잘하다가 css를 변경하했는데
+gulp로 압축해줘야 한다고 한다..
+
+npm을 설치했다.
+
+gulp를 하니까 오류난다. 버전 충돌이란다. 
+
+npm 의 종속성을 최신 모듈 업데이트하는 패키지를 설치한다.
+npm install -g npm-check-updates
+
+ncu -u 명령으로 업데이트를 한다.
+
+그러나 오류 발생.
+ncu : 이 시스템에서 스크립트를 실행할 수 없으므로 C:\Users\Administrator\AppData\Roaming\npm\ncu.ps1 파일을 로드할 수 없습니다. 자세한 내용은 about_Execution_Policies(https://go.microsoft.com/fwlink/?LinkID=135170)  
+를 참조하십시오.
+
+원인은 권한
+현재 권한상태 확인(작업폴더에서)
+get-ExecutionPolicy
+
+- 권한 상태값
+
+ Restricted : default설정값으로, 스크립트 파일을 실행할 수 없습니다.
+
+ AllSigned : 신뢰할 수 있는(서명된) 스크립트 파일만 실행할 수 있습니다.
+
+ RemoteSigned : 로컬에서 본인이 생성한 스크립트와, 신뢰할 수 있는(서명된) 스크립트 파일 실행할 수 있습니다.
+
+ Unrestricted : 모든 스크립트 실행가능
+
+ ByPass : 경고/차단 없이 모든 것을 실행가능하도록함
+
+ Undefined : 권한을 설정하지 않겠음
+
+권한 상태를 "RemoteSigned"으로 변경합니다.
+  > Set-ExecutionPolicy RemoteSigned
+
+
+package.json 파일이 업데이트되면
+npm 의 종속성을 다시 설치
+npm install
+
+그후 다시 gulp css 하면 또 오류난다. 버전이 안맞는댄다.
+"gulp-imagemin": "^7.1.0" 으로 변경한다. 

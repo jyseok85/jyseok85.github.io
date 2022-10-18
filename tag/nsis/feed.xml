@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://jyseok85.github.io/tag/nsis/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://jyseok85.github.io/" rel="alternate" type="text/html" />
+  <updated>2022-10-18T16:37:53+09:00</updated>
+  <id>https://jyseok85.github.io/tag/nsis/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Dev-History | </title>
+  
+
+  
+    <subtitle>지식을 잃어버리지 않게 기록하기 위한 블로그</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">문자열 검색</title>
+      <link href="https://jyseok85.github.io/nsis" rel="alternate" type="text/html" title="문자열 검색" />
+      <published>2022-10-18T09:18:00+09:00</published>
+      <updated>2022-10-18T09:18:00+09:00</updated>
+      <id>https://jyseok85.github.io/nsis</id>
+      <content type="html" xml:base="https://jyseok85.github.io/nsis">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-fo-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./nsis&quot;&gt;basic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;문자열 검색&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>abraham</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="nsis" />
+      
+
+      
+        <summary type="html">basic 문자열 검색</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
