@@ -1,8 +1,173 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jyseok85.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jyseok85.github.io/" rel="alternate" type="text/html" /><updated>2022-10-18T16:37:53+09:00</updated><id>https://jyseok85.github.io/feed.xml</id><title type="html">Dev-History</title><subtitle>지식을 잃어버리지 않게 기록하기 위한 블로그</subtitle><entry><title type="html">문자열 검색</title><link href="https://jyseok85.github.io/nsis" rel="alternate" type="text/html" title="문자열 검색" /><published>2022-10-18T09:18:00+09:00</published><updated>2022-10-18T09:18:00+09:00</updated><id>https://jyseok85.github.io/nsis</id><content type="html" xml:base="https://jyseok85.github.io/nsis">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jyseok85.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jyseok85.github.io/" rel="alternate" type="text/html" /><updated>2022-10-21T12:57:05+09:00</updated><id>https://jyseok85.github.io/feed.xml</id><title type="html">Dev-History</title><subtitle>지식을 잃어버리지 않게 기록하기 위한 블로그</subtitle><entry><title type="html">basic</title><link href="https://jyseok85.github.io/nsis" rel="alternate" type="text/html" title="basic" /><published>2022-10-18T09:18:00+09:00</published><updated>2022-10-18T09:18:00+09:00</updated><id>https://jyseok85.github.io/nsis</id><content type="html" xml:base="https://jyseok85.github.io/nsis">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-fo-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./nsis&quot;&gt;basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./nsis&quot;&gt; - basic&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;문자열 검색&lt;/p&gt;</content><author><name>abraham</name></author><category term="nsis" /><summary type="html">basic 문자열 검색</summary></entry><entry><title type="html">Gettysburg Address</title><link href="https://jyseok85.github.io/gettysburg-address" rel="alternate" type="text/html" title="Gettysburg Address" /><published>1863-11-19T19:18:00+09:00</published><updated>1863-11-19T19:18:00+09:00</updated><id>https://jyseok85.github.io/gettysburg-address</id><content type="html" xml:base="https://jyseok85.github.io/gettysburg-address">&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+
+&lt;h6 id=&quot;문자열-검색-함수-strcontains&quot;&gt;문자열 검색 함수 StrContains&lt;/h6&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;StrContains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;비교문자열&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;입력 문자열과 비교문자열을 비교해서 발견된 경우 비교문자열을 반환합니다.&lt;br /&gt;
+찾지 못할경우에 null or (““)공백을 반환합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;응용&quot;&gt;응용&lt;/h6&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;StrContains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;http&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;StrCmp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notfound&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;notfound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;127.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;입력된 문자열에 ‘http’가 입력되어 있을 경우 result 변수에 해당 주소를 입력하고, 
+발견하지 못했을 경우 result 변수에 localhost 주소를 입력합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;함수추가&quot;&gt;함수추가&lt;/h6&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_HAYSTACK&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_2&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_3&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_4&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_RETURN_VAR&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StrContains&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Exch&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Exch&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Exch&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_HAYSTACK&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_RETURN_VAR&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrLen&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrLen&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_4&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_HAYSTACK&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;IntOp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_3&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_HAYSTACK&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;StrCmp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_3&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;StrCmp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;Goto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_RETURN_VAR&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;Goto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;Pop&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;Exch&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_RETURN_VAR&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;FunctionEnd&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;macro&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_StrContainsConstructor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OUT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NEEDLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HAYSTACK&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Push&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`${HAYSTACK}`&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Push&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`${NEEDLE}`&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Call&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StrContains&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Pop&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`${OUT}`&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;macroend&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;define&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StrContains&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;!insertmacro &quot;_StrContainsConstructor&quot;&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>abraham</name></author><category term="nsis" /><summary type="html">- basic</summary></entry><entry><title type="html">1. ML-Agents 환경구성(Windows)</title><link href="https://jyseok85.github.io/Configuration" rel="alternate" type="text/html" title="1. ML-Agents 환경구성(Windows)" /><published>2022-10-18T09:18:00+09:00</published><updated>2022-10-18T09:18:00+09:00</updated><id>https://jyseok85.github.io/Configuration</id><content type="html" xml:base="https://jyseok85.github.io/Configuration">&lt;h6 id=&quot;20221021-기준-설치-정보는-다음과-같습니다&quot;&gt;2022.10.21 기준 설치 정보는 다음과 같습니다.&lt;/h6&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Version&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Release Date&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Paython Package&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Unity Package&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Release 19&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;January 14, 2022&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.28.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2.2.1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;파이썬-설치&quot;&gt;파이썬 설치&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;현재 Release19 버전에서 Python3.9 이후 버전은 지원되지 않기 때문에, 반드시 &lt;strong&gt;Python 3.8버전&lt;/strong&gt;으로 다운받습니다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.python.org/downloads/windows/&quot;&gt;공식사이트 다운로드 페이지로 이동 및 다운로드(클릭)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/mlagents/python.png&quot; style=&quot;margin-left: false; margin-right: auto; display: block;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;설치화면에서 &lt;strong&gt;“Add Python.exe to PATH”&lt;/strong&gt; 를 체크하여 환경변수를 추가한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;ml-agents-관련-파이썬-패키지-설치&quot;&gt;ML Agents 관련 파이썬 패키지 설치&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-- 1. 작업할 디렉토리를 만들고 깃에서 관련 소스를 가져온다.
+$ git clone --branch release_1 https://github.com/Unity-Technologies/ml-agents.git
+$ cd ml-agents
+
+-- 2. 관련 툴 설치
+$ sudo pip3 install setuptools --upgrade
+
+-- 3. ml-agents 설치 및 환경 설치
+$ sudo pip3 install -e ./ml-agents-envs
+$ sudo pip3 install -e ./ml-agents
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;파이토치-설치&quot;&gt;파이토치 설치&lt;/h4&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;최종-설치확인&quot;&gt;최종 설치확인&lt;/h4&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mlagents-learn -h
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;정상적으로 설치한 경우 아래와 같은 화면이 표시됩니다. 
+&lt;img src=&quot;/assets/images/mlagents/complete.png&quot; width=&quot;800&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;유니티에서-ml-agents-패키지-설치&quot;&gt;유니티에서 ML Agents 패키지 설치&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;패키지 매니저에서 ML Agents 2.0.1 버전이 검색됩니다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;최신 버전이 아니기 때문에 &lt;strong&gt;&lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/manual/index.html&quot;&gt;ML Agents Unity 공식 문서&lt;/a&gt;&lt;/strong&gt; 에서 설치 정보를 가져옵니다. &lt;br /&gt;
+&lt;em&gt;(현재 최신버전은 2.3.0-exp2)&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/mlagents/unitydoc.png&quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;git+https://github.com/Unity-Technologies/ml-agents.git?path=com.unity.ml-agents#release_19&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;위의 주소를 복사해서 Package Manager의 &lt;strong&gt;+&lt;/strong&gt; 버튼 클릭후 &lt;strong&gt;Add package from git URL…&lt;/strong&gt; 을 선택하여 붙여 넣기 한 후 인스톨을 진행합니다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/mlagents/addgit.png&quot; width=&quot;800&quot; /&gt;
+&lt;img src=&quot;/assets/images/mlagents/gitaddedmlagent.png&quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이것으로 정상동작하는 유니티와 파이썬의 패키지버전을 설치했습니다. 
+|Version|Release Date|Paython Package|Unity Package|
+|:–:|:–:|:–:|:–:|
+|Release 19 |	January 14, 2022|0.28.0	|2.2.1|&lt;/p&gt;
+
+&lt;p&gt;격자 10X10 맵을 생성한다.&lt;/p&gt;
+
+&lt;p&gt;플레이어와 몬스터캐릭터를 생성한다.&lt;/p&gt;
+
+&lt;p&gt;메인 로직을 생성한다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;자기 턴이 올때 공격 or 이동가능&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>YeonSeok Jo</name></author><category term="ml-agents" /><summary type="html">2022.10.21 기준 설치 정보는 다음과 같습니다.</summary></entry><entry><title type="html">Gettysburg Address</title><link href="https://jyseok85.github.io/gettysburg-address" rel="alternate" type="text/html" title="Gettysburg Address" /><published>1863-11-19T19:18:00+09:00</published><updated>1863-11-19T19:18:00+09:00</updated><id>https://jyseok85.github.io/gettysburg-address</id><content type="html" xml:base="https://jyseok85.github.io/gettysburg-address">&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
 
 &lt;p&gt;Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.&lt;/p&gt;
 

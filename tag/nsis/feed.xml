@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://jyseok85.github.io/tag/nsis/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://jyseok85.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-10-18T16:37:53+09:00</updated>
+  <updated>2022-10-21T12:57:05+09:00</updated>
   <id>https://jyseok85.github.io/tag/nsis/feed.xml</id>
 
   
@@ -32,16 +32,77 @@
 
   
     <entry>
-      <title type="html">문자열 검색</title>
-      <link href="https://jyseok85.github.io/nsis" rel="alternate" type="text/html" title="문자열 검색" />
+      <title type="html">basic</title>
+      <link href="https://jyseok85.github.io/nsis" rel="alternate" type="text/html" title="basic" />
       <published>2022-10-18T09:18:00+09:00</published>
       <updated>2022-10-18T09:18:00+09:00</updated>
       <id>https://jyseok85.github.io/nsis</id>
       <content type="html" xml:base="https://jyseok85.github.io/nsis">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-fo-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./nsis&quot;&gt;basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./nsis&quot;&gt; - basic&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;문자열 검색&lt;/p&gt;</content>
+
+&lt;h6 id=&quot;문자열-검색-함수-strcontains&quot;&gt;문자열 검색 함수 StrContains&lt;/h6&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;StrContains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;비교문자열&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;입력 문자열과 비교문자열을 비교해서 발견된 경우 비교문자열을 반환합니다.&lt;br /&gt;
+찾지 못할경우에 null or (““)공백을 반환합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;응용&quot;&gt;응용&lt;/h6&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;StrContains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;http&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;StrCmp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notfound&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;notfound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;127.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;입력된 문자열에 ‘http’가 입력되어 있을 경우 result 변수에 해당 주소를 입력하고, 
+발견하지 못했을 경우 result 변수에 localhost 주소를 입력합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;함수추가&quot;&gt;함수추가&lt;/h6&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_HAYSTACK&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_2&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_3&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_4&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;STR_RETURN_VAR&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StrContains&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Exch&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Exch&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Exch&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_HAYSTACK&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_RETURN_VAR&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrLen&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;StrLen&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_4&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_HAYSTACK&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;IntOp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_3&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_HAYSTACK&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;StrCmp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_3&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;StrCmp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_1&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_CONTAINS_VAR_4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;Goto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;StrCpy&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_RETURN_VAR&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;Goto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;Pop&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_NEEDLE&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;Exch&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;STR_RETURN_VAR&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;FunctionEnd&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;macro&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_StrContainsConstructor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OUT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NEEDLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HAYSTACK&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Push&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`${HAYSTACK}`&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Push&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`${NEEDLE}`&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Call&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StrContains&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Pop&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`${OUT}`&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;macroend&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;define&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StrContains&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;!insertmacro &quot;_StrContainsConstructor&quot;&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
       
@@ -62,7 +123,7 @@
       
 
       
-        <summary type="html">basic 문자열 검색</summary>
+        <summary type="html">- basic</summary>
       
 
       

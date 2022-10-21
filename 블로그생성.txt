@@ -55,3 +55,11 @@ npm install
 
 그후 다시 gulp css 하면 또 오류난다. 버전이 안맞는댄다.
 "gulp-imagemin": "^7.1.0" 으로 변경한다. 
+
+
+루즈설치(코드 표현)
+gem install rouge
+
+rougify help style (스타일 목록 확인)
+
+rougify style monokai.sublime > assets/css/syntax.css (파일 생성)

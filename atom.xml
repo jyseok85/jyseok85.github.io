@@ -8,19 +8,34 @@
     
       
       <item>
-        <title>문자열 검색</title>
+        <title>basic</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-fo-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./nsis&quot;&gt;basic&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./nsis&quot;&gt; - basic&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;문자열 검색&lt;/p&gt;
+
 </description>
         
         <pubDate>Tue, 18 Oct 2022 09:18:00 +0900</pubDate>
         <link>
         https://jyseok85.github.io/nsis</link>
         <guid isPermaLink="true">https://jyseok85.github.io/nsis</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>1. ML-Agents 환경구성(Windows)</title>
+        
+          <description>&lt;h6 id=&quot;20221021-기준-설치-정보는-다음과-같습니다&quot;&gt;2022.10.21 기준 설치 정보는 다음과 같습니다.&lt;/h6&gt;
+
+</description>
+        
+        <pubDate>Tue, 18 Oct 2022 09:18:00 +0900</pubDate>
+        <link>
+        https://jyseok85.github.io/Configuration</link>
+        <guid isPermaLink="true">https://jyseok85.github.io/Configuration</guid>
       </item>
       
     
