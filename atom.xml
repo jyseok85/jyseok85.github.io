@@ -8,6 +8,121 @@
     
       
       <item>
+        <title>아무도 안알려주는 팁!</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-fo-contents-list&quot;&gt;
+    &lt;b&gt;목차&lt;/b&gt;
+    &lt;li&gt;&lt;a href=&quot;./Configuration&quot;&gt; 1. ML-Agents 환경구성(Windows)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./PlayTutorial&quot;&gt; 2. Play Tutorial&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./What!&quot;&gt; 3. What should i do?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Conculation&quot;&gt; 4.시작부터 결론??&lt;/a&gt;&lt;/li&gt;
+    &lt;hr style=&quot;border: solid 1px rgb(134, 134, 134);&quot; /&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Thu, 03 Nov 2022 18:00:00 +0900</pubDate>
+        <link>
+        https://jyseok85.github.io/Tip</link>
+        <guid isPermaLink="true">https://jyseok85.github.io/Tip</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>4. 시작부터 결론?</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-fo-contents-list&quot;&gt;
+    &lt;b&gt;목차&lt;/b&gt;
+    &lt;li&gt;&lt;a href=&quot;./Configuration&quot;&gt; 1. ML-Agents 환경구성(Windows)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./PlayTutorial&quot;&gt; 2. Play Tutorial&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./What!&quot;&gt; 3. What should i do?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Conculation&quot;&gt; 4.시작부터 결론??&lt;/a&gt;&lt;/li&gt;
+    &lt;hr style=&quot;border: solid 1px rgb(134, 134, 134);&quot; /&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Mon, 24 Oct 2022 18:00:00 +0900</pubDate>
+        <link>
+        https://jyseok85.github.io/Conculation</link>
+        <guid isPermaLink="true">https://jyseok85.github.io/Conculation</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>3. What should I do?</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-fo-contents-list&quot;&gt;
+    &lt;b&gt;목차&lt;/b&gt;
+    &lt;li&gt;&lt;a href=&quot;./Configuration&quot;&gt; 1. ML-Agents 환경구성(Windows)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./PlayTutorial&quot;&gt; 2. Play Tutorial&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./What!&quot;&gt; 3. What should i do?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Conculation&quot;&gt; 4.시작부터 결론??&lt;/a&gt;&lt;/li&gt;
+    &lt;hr style=&quot;border: solid 1px rgb(134, 134, 134);&quot; /&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Mon, 24 Oct 2022 18:00:00 +0900</pubDate>
+        <link>
+        https://jyseok85.github.io/What!</link>
+        <guid isPermaLink="true">https://jyseok85.github.io/What!</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>2. Play Tutorial</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-fo-contents-list&quot;&gt;
+    &lt;b&gt;목차&lt;/b&gt;
+    &lt;li&gt;&lt;a href=&quot;./Configuration&quot;&gt; 1. ML-Agents 환경구성(Windows)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./PlayTutorial&quot;&gt; 2. Play Tutorial&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./What!&quot;&gt; 3. What should i do?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Conculation&quot;&gt; 4.시작부터 결론??&lt;/a&gt;&lt;/li&gt;
+    &lt;hr style=&quot;border: solid 1px rgb(134, 134, 134);&quot; /&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Mon, 24 Oct 2022 18:00:00 +0900</pubDate>
+        <link>
+        https://jyseok85.github.io/PlayTutorial</link>
+        <guid isPermaLink="true">https://jyseok85.github.io/PlayTutorial</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>1. ML-Agents 환경구성(Windows)</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-fo-contents-list&quot;&gt;
+    &lt;b&gt;목차&lt;/b&gt;
+    &lt;li&gt;&lt;a href=&quot;./Configuration&quot;&gt; 1. ML-Agents 환경구성(Windows)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./PlayTutorial&quot;&gt; 2. Play Tutorial&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./What!&quot;&gt; 3. What should i do?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Conculation&quot;&gt; 4.시작부터 결론??&lt;/a&gt;&lt;/li&gt;
+    &lt;hr style=&quot;border: solid 1px rgb(134, 134, 134);&quot; /&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 21 Oct 2022 18:00:00 +0900</pubDate>
+        <link>
+        https://jyseok85.github.io/Configuration</link>
+        <guid isPermaLink="true">https://jyseok85.github.io/Configuration</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>basic</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -21,21 +136,6 @@
         <link>
         https://jyseok85.github.io/nsis</link>
         <guid isPermaLink="true">https://jyseok85.github.io/nsis</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>1. ML-Agents 환경구성(Windows)</title>
-        
-          <description>&lt;h6 id=&quot;20221021-기준-설치-정보는-다음과-같습니다&quot;&gt;2022.10.21 기준 설치 정보는 다음과 같습니다.&lt;/h6&gt;
-
-</description>
-        
-        <pubDate>Tue, 18 Oct 2022 09:18:00 +0900</pubDate>
-        <link>
-        https://jyseok85.github.io/Configuration</link>
-        <guid isPermaLink="true">https://jyseok85.github.io/Configuration</guid>
       </item>
       
     
