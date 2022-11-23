@@ -5,18 +5,78 @@
 3. index.html에서 기존 기본경로의 테마를 사용하던것을 새로추가한 경로로 변경한다.
 4. 테마를 입맛에 맞게 수정한다. 
 
-RadzenDropDwon에 이미지 추가
+RadzenDropDwon에 국가별 이미지 추가능기능
+- 기본클래스
+
+``` c#
+public class LanguageManager
+{
+    private LanguageManager() { }
+    //private static 인스턴스 객체
+    private static readonly Lazy<LanguageManager> _instance = new Lazy<LanguageManager>(() => new LanguageManager());
+    //public static 의 객체반환 함수
+    public static LanguageManager Instance { get { return _instance.Value; } }
+
+    private List<LanguageInfo> languageInfos = new List<LanguageInfo>();
+    public List<LanguageInfo> Languages
+    {
+        get
+        {
+            if (this.languageInfos.Count == 0)
+            {
+                languageInfos.Add(new LanguageInfo("EN", "imagePath or imageData"));
+                languageInfos.Add(new LanguageInfo("KR", "imagePath or imageData"));
+                languageInfos.Add(new LanguageInfo("JP", "imagePath or imageData"));
+                languageInfos.Add(new LanguageInfo("CN", "imagePath or imageData"));
+            }
+            return languageInfos;
+        }
+     }
+}
+        
+public class LanguageInfo
+{ 
+    public string IconImage { get; set; }
+    public string NationalCode { get; set; }
+    public LanguageInfo(string nationalCode , string iconImage)
+    {
+        this.IconImage= iconImage;
+        this.NationalCode = nationalCode;
+    }
+}
+```
+
+- 이미지 표시를 위한 드롭다운박스 수정
 ``` razor
-<RadzenDropDown AllowClear="false" <!--검색기능 제거 -->
+<RadzenDropDown AllowClear="false"                                              <!--검색기능 제거 -->
                 TValue="string"                
-                Data=@WebViewerHelper.Instance.ExportManager.ExportInfos        <!-- 데이터는 해당 클래스의 리스트 -->
-                TextProperty="ExportType"                                       <!-- 해당 클래스의 속성값 -->
+                Data=@LanguageManager.Instance.Languages                        <!-- 데이터는 해당 클래스의 리스트 -->
+                TextProperty="@nameof(LanguageInfo.NationalCode)"               <!-- 데이터의 표시할 값 -->
                 Change=@(args => OnChange(args))>                               <!-- 드롭다운박스 변경 이벤트 -->
         <Template Context="dropDownContext">                                    <!-- 템플릿을 추가해서 오버라이드 한다. -->
         @{
-                var context = dropDownContext as ExportInfo;                    <!-- 드롭다운의 아이템을 해당 클래스 객체로 변환 -->
+                var context = dropDownContext as LanguageInfo;                  <!-- 드롭다운의 아이템을 해당 클래스 객체로 변환 -->
                 <RadzenImage Path=@(context.IconImage) />                       <!-- RadzenImage 표시 -->
-                @context.ExportType                                             <!-- 텍스트 표시-->
+                @context.NationalCode                                           <!-- 텍스트 표시-->
+        }
+        </Template>
+</RadzenDropDown>
+```
+
+- 실제 데이터 바인딩처리
+``` razor
+<RadzenDropDown AllowClear="false"                                              <!--검색기능 제거 -->
+                TValue="string"                
+                Data=@LanguageManager.Instance.Languages                        <!-- 데이터는 해당 클래스의 리스트 -->
+                TextProperty="@nameof(LanguageInfo.NationalCode)"               <!-- 데이터의 표시할 값 -->
+(+)             ValueProperty="@nameof(LanguageInfo.NationalCode)"              <!-- 데이터의 값 타입 -->
+(+)             @bind-Value="LanguageManager.Instance.CurrentLanguage"          <!-- 실제 바인딩될 객체 -->
+                Change=@(args => OnChange(args))>                               <!-- 드롭다운박스 변경 이벤트 -->       
+        <Template Context="dropDownContext">                                    <!-- 템플릿을 추가해서 오버라이드 한다. -->
+        @{
+                var context = dropDownContext as LanguageInfo;                  <!-- 드롭다운의 아이템을 해당 클래스 객체로 변환 -->
+                <RadzenImage Path=@(context.IconImage) />                       <!-- RadzenImage 표시 -->
+                @context.NationalCode                                           <!-- 텍스트 표시-->
         }
         </Template>
 </RadzenDropDown>
