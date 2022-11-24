@@ -81,3 +81,15 @@ public class LanguageInfo
         </Template>
 </RadzenDropDown>
 ```
+
+Radzen 컴포넌트의 문제일수도 있지만 패널컴포넌트를 빠르게 온오프 할경우 하위 컴포넌트가 선택되는 문제가 있다.
+다행히도 bootstrap 에 선택금지 속성이 있으니
+패널컴포넌트 부모쪽에 user-select-none 클래스 속성을 지정한다. 
+
+RadzenDialog가 나오지 않는 문제
+개념이 달라서 발생했던 문제로.
+MainLayout.razor 에 다이얼로그 컨트롤을 하나 추가해 놓고선
+다른 페이지에서 그걸 사용할 수 있게 하는듯하다.
+
+그래서 메인에 
+<RazdanDialog /> 를 하나 추가해야한다. 
