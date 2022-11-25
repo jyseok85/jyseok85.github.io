@@ -81,20 +81,21 @@ public class LanguageInfo
         </Template>
 </RadzenDropDown>
 ```
-@bind-Value vs Value
+~~@bind-Value vs Value
 @bind-Value 의 경우 실시간 값이 적용됨 - 드롭다운에서 값을 바꾸면 바로 적용되고, 이벤트에서 확인시 해당 변수의 값이 바뀐걸 확인
-Value는 값을 수동으로 변경해야함 
+Value는 값을 수동으로 변경해야함
+OnChange 이벤트 내에서 값을 재조정해야 할 경우에는 Value를 사용하고, 그 이외의 경우는 @bind-Value를 사용해도 무관~~
+@bind-Value 로 정상동작확인.
 
-OnChange 이벤트 내에서 값을 재조정해야 할 경우에는 Value를 사용하고, 그 이외의 경우는 @bind-Value를 사용해도 무관
 
-Radzen 컴포넌트의 문제일수도 있지만 패널컴포넌트를 빠르게 온오프 할경우 하위 컴포넌트가 선택되는 문제가 있다.
+### Radzen 컴포넌트의 문제일수도 있지만 패널 컴포넌트를 빠르게 온오프 할경우 하위 컴포넌트가 선택되는 문제가 있다.
 
 다행히도 bootstrap 에 선택금지 속성이 있으니
 
 패널컴포넌트 부모쪽에 user-select-none 클래스 속성을 지정한다. 
 
 
-#### RadzenDialog가 나오지 않는 문제
+### RadzenDialog가 나오지 않는 문제
 다이얼로그를 생성할때?? 모든컨트롤을 생성할때 2가지 방법이 있다.
 1. 만들어두고 안보이게 한다.
 2. 필요할때만든다.
