@@ -101,6 +101,8 @@ Radzen 컴포넌트의 문제일수도 있지만 패널컴포넌트를 빠르게
 RadzenDialog 의 경우 프레임워크를 생성해두고 필요할때 불러오는 개념이다. 
 
 그렇기 때문에 MainLayout.razor 에 다이얼로그 컨트롤을 추가해 놓고,
+``` razor
 <RazdanDialog /> 를 추가
+```
 다른 페이지에서 사용한다. 
 
