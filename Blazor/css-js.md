@@ -2,7 +2,7 @@
 
 
 ### Sample
-```
+``` css
 /* CSS */
 .para{
   color : red;
@@ -12,22 +12,22 @@
 ```
 
 1. id로 찾기
-```
+``` js
 let element = document.getElementByID("userid");
 ```
 
 2. 태그명으로 찾기 (너무 많이 나와서 잘 안쓸듯)
-```
+``` js
 let element = document.getElementByTagName("input");
 ```
 
 3. 클래스명으로 찾기 
-```
+``` js
 let element = document.getElementByClassName("para");
 ```
 
 4. CSS 선택자를 이용해서 찾기
-```
+``` js
 let element = document.querySelectorAll("para");
 //복합 조합
 let inputElement = document.querySelectorAll("input.para"); 
@@ -38,7 +38,7 @@ let searched = document.querySelectorAll("[name=chk_interest]:checked");
 
 # CSS
 기본 기능 
-```
+``` css
 tag-bg-red{
   color:red;
 }
@@ -57,7 +57,7 @@ tag-bg-red{
 
 # 복합 선택자
 ### Sample
-```
+``` html
 <tag-bg-red>
   <ul class = "child0"/>
   <p class = "child1">
@@ -69,7 +69,7 @@ tag-bg-red{
 ```
 
 1. 하위 모든 오브젝트
-```
+``` css
 //tag-bg-red 태그아래의 p 태그에 컬러를 적용 (tag-bg-red 에는 적용하지 않음)
 tag-bg-red p{
   color : white;
@@ -82,27 +82,27 @@ tag-bg-red p{
 ```
 
 2.바로 아래 하나만 선택 => child1 선택됨
-```
+``` css
 tag-bg-red>p{
   color : white;
 }
 ```
 
 3. 동일 레벨 인접 => child2 가 선택됨
-```
+``` css
 p+ul{
   color : white;
 }
 ```
 4. 동일 레벨 모두 => child2 child3 모두 
-```
+``` css
 p~ul{
   color : white;
 }
 ```
 # 속성 선택자
 ### Sample
-```
+``` html
 <tag-bg-red>
   <ul class = "child0"/>
   <p class = "child1" name = "test">
@@ -114,7 +114,7 @@ p~ul{
 ```
 
 
-```
+``` css
 //p태그에 class 요소가 들어간것을 전부 찾기 
 p[class]{
   color : red;
