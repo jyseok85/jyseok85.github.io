@@ -42,16 +42,16 @@ let searched = document.querySelectorAll("[name=chk_interest]:checked");
 tag-bg-red{
   color:red;
 }
-<tag-bg-red> test </tag-bg-red>
-
 .class-bg-red{
   color:red;
 }
-<div class="class-bg-red"> text </div>
-
 #id-bg-red{
   color:red
 }
+```
+``` html
+<tag-bg-red> test </tag-bg-red>
+<div class="class-bg-red"> text </div>
 <div id="id-bg-red"> test </div>
 ```
 
@@ -61,7 +61,7 @@ tag-bg-red{
 <tag-bg-red>
   <ul class = "child0"/>
   <p class = "child1">
-    <p class ="child1-child1/>
+    <p class ="child1-child1"/>
   </p>
   <ul class = "child2"/>
   <ul class = "child3"/>
@@ -106,7 +106,7 @@ p~ul{
 <tag-bg-red>
   <ul class = "child0"/>
   <p class = "child1" name = "test">
-    <p class ="child1-child1 name = "child-child"/>
+    <p class ="child1-child1" name = "child-child"/>
   </p>
   <ul class = "child2"/>
   <ul class = "child3"/>
