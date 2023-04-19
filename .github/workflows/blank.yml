@@ -20,4 +20,4 @@ jobs:
       - run: ls -al
       - uses: actions/checkout@v3
       - run: ls -al
-      - run: cat .github/workflows/checkout.yml
+      - run: cat ./github/workflows/checkout.yml
