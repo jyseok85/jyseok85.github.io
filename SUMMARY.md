@@ -11,4 +11,5 @@
 ***
 
 * [Monitoring](monitoring/README.md)
-  * [tempo-grafana-prometheus](monitoring/tempo-grafana-prometheus.md)
+  * [1.tempo-grafana-prometheus](monitoring/1.tempo-grafana-prometheus.md)
+  * [2.OpenTelemetry-tempo-net.](monitoring/2.opentelemetry-tempo-net..md)
