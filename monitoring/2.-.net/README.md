@@ -1,10 +1,8 @@
 ---
-description: '개발환경 : vs2022,  .Net7,  Win11'
+description: '개발환경 : vs2022,  .Net7,  Win11, Swagger'
 ---
 
-# 2.OpenTelemetry-tempo-net.
-
-
+# 2. .Net 환경에서의 자동계측
 
 목표 : .Net 웹 서버의 Trace을 OpenTelemetry로 내보내기
 

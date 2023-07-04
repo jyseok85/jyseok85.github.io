@@ -12,6 +12,15 @@
 
 * [Monitoring](monitoring/README.md)
   * [1.tempo-grafana-prometheus](monitoring/1.tempo-grafana-prometheus.md)
-  * [2.OpenTelemetry-tempo-net](monitoring/2.opentelemetry-tempo-net/README.md)
-    * [Tempo Test](monitoring/2.opentelemetry-tempo-net/tempo-test.md)
-  * [3.OpenTelemetry-tempo-springboot](monitoring/3.opentelemetry-tempo-springboot.md)
+  * [2. .Net 환경에서의 자동계측](monitoring/2.-.net/README.md)
+    * [Tempo Test](monitoring/2.-.net/tempo-test.md)
+  * [3. Springboot 환경에서 자동계측](monitoring/3.-springboot.md)
+* [Page 1](page-1.md)
+
+## Blazor
+
+* [.Net5 -> .Net7 변경점](blazor/.net5-greater-than-.net7.md)
+
+***
+
+* [WebViewer 개발](webviewer.md)
