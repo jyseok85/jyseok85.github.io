@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Winform](README.md)
-  * [경고](winform/HiDPI.md)
   * [Table of contents](winform/SUMMARY.md)
 
-## Nsis
+## Windows
 
-* [Page 1](nsis/page-1.md)
+* [Nsis 문자열 검색](windows/nsis.md)
+* [Winform HiDpi 팁](windows/hidpi.md)
