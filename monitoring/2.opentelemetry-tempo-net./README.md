@@ -1,6 +1,10 @@
+---
+description: '개발환경 : vs2022,  .Net7,  Win11'
+---
+
 # 2.OpenTelemetry-tempo-net.
 
-개발환경 vs2022 .Net7 Win11
+
 
 목표 : .Net 웹 서버의 Trace을 OpenTelemetry로 내보내기
 
@@ -8,9 +12,9 @@
 
 **ASP .Net Core 웹 API** 프로젝트를 생성합니다.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 누겟 패키지 설치
 
@@ -20,7 +24,7 @@ OpenTelemetry.Instrumentation.AspNetCore 1.0.0-rc9.14
 OpenTelemetry.Exporter.Console 1.4.0
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 program.cs 에 다음 코드를 삽입합니다.
 
@@ -42,18 +46,18 @@ builder.Services.AddOpenTelemetry()
 
 1. 프로젝트를 실행합니다.
 2. 서버가 실행된 콘솔창과 웹 브라우저가 열립니다.
-3. Swegger 웹에서 기본적으로 생성된 Get Method를 실행합니다.
-4. 등록한 example-app 이 콘솔창에 service.name 으로 출력됩니다.
-5.
+3.  Swegger 웹에서 기본적으로 생성된 Get Method를 Execute 합니다.
 
-    <figure><img src="../.gitbook/assets/K-001.png" alt=""><figcaption></figcaption></figure>
-6.
+    <figure><img src="../../.gitbook/assets/K-001.png" alt=""><figcaption></figcaption></figure>
+4.  등록한 example-app 이 콘솔창에 service.name 으로 출력됩니다.
 
-    <figure><img src="../.gitbook/assets/K-002.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/K-002.png" alt=""><figcaption></figcaption></figure>
+5. **이것만 보면 잘 알**
+6. **5-수 없지만, 어쨌든 제대로 Trace가 되어 출력되고 있습니다.**
 
 </details>
 
-**이것만 보면 잘 알수 없지만, 어쨌든 제대로 Trace가 되어 출력되고 있습니다.**
+
 
 ### 2. Grpc로 내보내기 추가
 
