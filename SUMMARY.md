@@ -19,10 +19,10 @@
 ## Blazor
 
 * [.Net5 -> .Net7 변경점](blazor/.net5-greater-than-.net7.md)
-
-***
-
-* [WebViewer 개발](webviewer.md)
+* [Tips](blazor/tips.md)
+* [Web Viewer 개발](blazor/web-viewer.md)
+* [Web Designer 맨땅에 헤딩](blazor/web-designer/README.md)
+  * [컴포넌트 마우스 이동](blazor/web-designer/undefined.md)
 
 ## Unity
 
