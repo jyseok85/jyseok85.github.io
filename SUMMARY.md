@@ -22,7 +22,7 @@
 * [Tips](blazor/tips.md)
 * [Web Viewer 개발](blazor/web-viewer.md)
 * [Web Designer 맨땅에 헤딩](blazor/web-designer/README.md)
-  * [컴포넌트 마우스 이동](blazor/web-designer/undefined.md)
+  * [01. Drag & Drop](blazor/web-designer/01.-drag-and-drop.md)
 
 ## Unity
 
