@@ -19,6 +19,7 @@
 ## Blazor
 
 * [.Net5 -> .Net7 변경점](blazor/.net5-greater-than-.net7.md)
+* [Blazor 에 Api Controller 추가](blazor/blazor-api-controller.md)
 * [Tips](blazor/tips.md)
 * [Web Viewer 개발](blazor/web-viewer.md)
 * [Web Designer 맨땅에 헤딩](blazor/web-designer/README.md)
