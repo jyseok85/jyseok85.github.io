@@ -12,7 +12,7 @@ ex)System.Windows.Forms
 
 
 
-기존 IIS환경 내에서 실행시
+다음은 IIS환경 내에서 Blazor를 호스팅하는 방법 입니다.&#x20;
 
 1. Blazor 웹 ->  ASP.NET + .NET Framework \
    문제점 : 서버 환경설치가 번거롭다.\
