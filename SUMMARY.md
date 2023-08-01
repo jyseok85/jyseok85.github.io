@@ -16,6 +16,7 @@
   * [2. .Net 환경에서의 자동계측](monitoring/2.-.net/README.md)
     * [Tempo Test](monitoring/2.-.net/tempo-test.md)
   * [3. Springboot 환경에서 자동계측](monitoring/3.-springboot.md)
+  * [Loki 와 Tempo의 UID 연동](monitoring/loki-tempo-uid.md)
 
 ## Blazor
 

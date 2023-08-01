@@ -22,7 +22,7 @@ OpenTelemetry.Instrumentation.AspNetCore 1.0.0-rc9.14
 OpenTelemetry.Exporter.Console 1.4.0
 ```
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 program.cs 에 다음 코드를 삽입합니다.
 

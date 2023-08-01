@@ -39,4 +39,4 @@ app.MapControllers();
 
 ex) [https://localhost:44377/api](https://localhost:44377/api/pdf)/values
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
