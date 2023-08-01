@@ -10,9 +10,9 @@ description: '개발환경 : vs2022,  .Net7,  Win11, Swagger'
 
 **ASP .Net Core 웹 API** 프로젝트를 생성합니다.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 누겟 패키지 설치
 
