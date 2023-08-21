@@ -30,6 +30,7 @@
   * [02. Draw Drag Area](blazor/web-designer/02.-draw-drag-area.md)
   * [03. Drag & Create Component](blazor/web-designer/03.-drag-and-create-component.md)
   * [04. Resize Component](blazor/web-designer/04.-resize-component.md)
+  * [05. Combine Component](blazor/web-designer/05.-combine-component.md)
 
 ## Unity
 
