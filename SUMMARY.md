@@ -31,6 +31,8 @@
   * [03. Drag & Create Component](blazor/web-designer/03.-drag-and-create-component.md)
   * [04. Resize Component](blazor/web-designer/04.-resize-component.md)
   * [05. Combine Component](blazor/web-designer/05.-combine-component.md)
+  * [06. Snap Control](blazor/web-designer/06.-snap-control/README.md)
+    * [Border 겹치는 문제](blazor/web-designer/06.-snap-control/border.md)
 
 ## Unity
 
