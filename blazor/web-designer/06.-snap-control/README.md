@@ -600,3 +600,5 @@ public class _06_SnapLineModel
 ```
 
 </details>
+
+<figure><img src="../../../.gitbook/assets/Snap.gif" alt=""><figcaption></figcaption></figure>
