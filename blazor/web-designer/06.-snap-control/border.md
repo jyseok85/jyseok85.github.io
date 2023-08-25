@@ -17,3 +17,7 @@
 
 
 원래 2번으로 계산해 하다가 컨트롤 수백개 올라가면 계산하기 너무 어려워보여서, 그냥 4번으로 정했습니다.&#x20;
+
+
+
+<figure><img src="../../../.gitbook/assets/Snap-Border1px.gif" alt=""><figcaption></figcaption></figure>
