@@ -33,6 +33,8 @@
   * [05. Combine Component](blazor/web-designer/05.-combine-component.md)
   * [06. Snap Control](blazor/web-designer/06.-snap-control/README.md)
     * [Border 겹치는 문제](blazor/web-designer/06.-snap-control/border.md)
+    * [컨트롤 키보드로 이동](blazor/web-designer/06.-snap-control/undefined.md)
+    * [겹치는 컨트롤 빨간색 테두리](blazor/web-designer/06.-snap-control/undefined-1.md)
 
 ## Unity
 
