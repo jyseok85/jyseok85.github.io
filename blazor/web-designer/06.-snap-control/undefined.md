@@ -157,3 +157,5 @@ private void OnKeyDown(KeyboardEventArgs e)
 ```
 
 </details>
+
+<figure><img src="../../../.gitbook/assets/KeyboradMove.gif" alt=""><figcaption></figcaption></figure>
