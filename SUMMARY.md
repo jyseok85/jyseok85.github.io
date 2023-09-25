@@ -25,7 +25,7 @@
 * [Blazor 에서 .NET Framework 참조](blazor/blazor-.net-framework.md)
 * [Tips](blazor/tips.md)
 * [Web Viewer 개발](blazor/web-viewer.md)
-* [Web Designer 맨땅에 헤딩](blazor/web-designer/README.md)
+* [Web Designer 기본 컨트롤 생성](blazor/web-designer/README.md)
   * [01. Drag & Drop](blazor/web-designer/01.-drag-and-drop.md)
   * [02. Draw Drag Area](blazor/web-designer/02.-draw-drag-area.md)
   * [03. Drag & Create Component](blazor/web-designer/03.-drag-and-create-component.md)
