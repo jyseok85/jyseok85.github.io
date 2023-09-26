@@ -36,6 +36,8 @@
     * [컨트롤 키보드로 이동](blazor/web-designer/06.-snap-control/undefined.md)
     * [겹치는 컨트롤 빨간색 테두리](blazor/web-designer/06.-snap-control/undefined-1.md)
   * [07. Undo Redo](blazor/web-designer/07.-undo-redo.md)
+* [Web Report Desinger](blazor/web-report-desinger/README.md)
+  * [1. 프로젝트 구성](blazor/web-report-desinger/1..md)
 
 ## Unity
 
