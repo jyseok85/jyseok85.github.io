@@ -38,6 +38,7 @@
   * [07. Undo Redo](blazor/web-designer/07.-undo-redo.md)
 * [Web Report Desinger](blazor/web-report-desinger/README.md)
   * [1. 기본 프로젝트 구성](blazor/web-report-desinger/1..md)
+  * [2. 레이아웃 구성](blazor/web-report-desinger/2..md)
 
 ## Unity
 
