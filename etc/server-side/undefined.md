@@ -228,9 +228,8 @@ _**즉 1 차 체크는 정상, 2차 체크로 루트 인증서가  정상인지 
 
 1. 윈도우에서 사용하기 위한 PFX 파일 변환
 
-```
-openssl pkcs12 -export -in server.crt -inkey server.key -out server.pfx
-```
+<pre><code><strong>openssl pkcs12 -export -in server.crt -inkey server.key -out server.pfx
+</strong></code></pre>
 
 &#x20;2-1. 윈도우에 지금 생성한 server.pfx 인증서 등록 \
 &#x20;       (인증서 - 로컬컴퓨터 - 개인용 - 인증서에 생성됩니다.)
@@ -256,3 +255,9 @@ netsh http add sslcert ipport=127.0.0.1:8888 certhash=인증서지문 appid={"gu
 
 * appid의 경우 어플리케이션을 식별하는 GUID 입니다. 임의의 값을 입력 가능합니다.&#x20;
 * 인증서 지문의 경우 server.crt 파일을실행 후 자세히 탭 맨 아래에 있습니다.&#x20;
+
+
+
+{% hint style="info" %}
+현재 openssl 최신버전(3.1.3)으로 pfx 파일 생성시 Win7,8에서 등록되지 않는 문제가 있습니다.
+{% endhint %}

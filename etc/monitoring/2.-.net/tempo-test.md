@@ -4,21 +4,21 @@
 
 기존처럼 동일하게 WeatherForecast API 를  Execute 버튼을  클릭합니다.
 
-<figure><img src="../../.gitbook/assets/K-001.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/K-001.png" alt=""><figcaption></figcaption></figure>
 
 기존엔 콘솔창으로 확인했지만, 템포 및 그라파나를 설치했기 때문에 그라파나에서 확인을 합니다. http://localhost:3000/ 기본 아이디 비번 admin,admin
 
 좌측하단 설정 -> Configration 클릭
 
-<figure><img src="../../.gitbook/assets/K-006.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/K-006.png" alt=""><figcaption></figcaption></figure>
 
 Tempo -> Explore 클릭&#x20;
 
-<figure><img src="../../.gitbook/assets/K-007.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/K-007.png" alt=""><figcaption></figcaption></figure>
 
 우측 상단 Run Query(파란색아이콘) 클릭&#x20;
 
-<figure><img src="../../.gitbook/assets/K-005.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/K-005.png" alt=""><figcaption></figcaption></figure>
 
 방금 요청한 API에 대한 트레이스가 나옵니다.
 
@@ -26,19 +26,19 @@ Tempo -> Explore 클릭&#x20;
 
 검색된 Trace ID를 클릭하면 상세 정보를 볼수 있습니다. 그러나 별 의미없는 단순 호출정보라서 (뭐 어쩌라고??) 생각됩니다.
 
-<figure><img src="../../.gitbook/assets/K-008.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/K-008.png" alt=""><figcaption></figcaption></figure>
 
 참고로 현재 구축한 Trace 시스템은 아래와 같은 구성으로 동작됩니다.&#x20;
 
 <div data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/구성도.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/구성도.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 단순한 API가 아니라. 실제 운영되는 서버처럼 복잡한 로직을 갖도록 프로젝트를 수정하겠습니다.
 
-<figure><img src="../../.gitbook/assets/서버API구성도.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/서버API구성도.png" alt=""><figcaption></figcaption></figure>
 
 * 외부 API는 비동기로 호출하며 나머지 내부 API는 전부 동기로 호출합니다.
 * 내부에서 한번더 내부 API를 호출하도록 하고
@@ -197,7 +197,7 @@ public async Task<IEnumerable<WeatherForecast>> Get()
 
 그라파나로 들어가서 마지막에 호출된 TraceID를 클릭하면 우리가 추가한 API가 연속적으로 호출되며  쓸만한Trace 화면을 볼 수 있습니다. &#x20;
 
-<figure><img src="../../.gitbook/assets/K-009.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/K-009.png" alt=""><figcaption></figcaption></figure>
 
 전체 호출에 1.11s가 걸렸으며
 

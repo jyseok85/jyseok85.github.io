@@ -1,22 +1,11 @@
 # Table of contents
 
-* [Winform](README.md)
-  * [Table of contents](winform/SUMMARY.md)
-
 ## Windows
 
-* [답답한 IIS](windows/iis.md)
-* [Nsis 문자열 검색](windows/nsis.md)
-* [Winform HiDpi 팁](windows/hidpi.md)
-
-***
-
-* [Monitoring](monitoring/README.md)
-  * [1.tempo-grafana-prometheus](monitoring/1.tempo-grafana-prometheus.md)
-  * [2. .Net 환경에서의 자동계측](monitoring/2.-.net/README.md)
-    * [Tempo Test](monitoring/2.-.net/tempo-test.md)
-  * [3. Springboot 환경에서 자동계측](monitoring/3.-springboot.md)
-  * [Loki 와 Tempo의 UID 연동](monitoring/loki-tempo-uid.md)
+* [답답한 IIS](README.md)
+* [Winform](windows/winform/README.md)
+  * [Table of contents](windows/winform/summary.md)
+  * [Winform HiDpi 팁](windows/winform/hidpi.md)
 
 ## Blazor
 
@@ -48,7 +37,19 @@
   * [3. 그래서 학습은 어떻게 하는건데??](unity/ml-agent/3..md)
   * [4. 실제 적용 취소한 이유](unity/ml-agent/4..md)
   * [Tip](unity/ml-agent/tip.md)
-* [DB](unity/db/README.md)
-  * [Postgres 기타.](unity/db/postgres-..md)
-* [Server-Side](unity/server-side/README.md)
-  * [자체 서명 인증서 만들기](unity/server-side/undefined.md)
+
+## ETC
+
+* [Nsis 문자열 검색](etc/nsis.md)
+* [Monitoring](etc/monitoring/README.md)
+  * [1.tempo-grafana-prometheus](etc/monitoring/1.tempo-grafana-prometheus.md)
+  * [2. .Net 환경에서의 자동계측](etc/monitoring/2.-.net/README.md)
+    * [Tempo Test](etc/monitoring/2.-.net/tempo-test.md)
+  * [3. Springboot 환경에서 자동계측](etc/monitoring/3.-springboot.md)
+  * [Loki 와 Tempo의 UID 연동](etc/monitoring/loki-tempo-uid.md)
+* [Server-Side](etc/server-side/README.md)
+  * [자체 서명 인증서 만들기](etc/server-side/undefined.md)
+  * [Custom Uri Scheme](etc/server-side/custom-uri-scheme.md)
+  * [Page](etc/server-side/page.md)
+* [DB](etc/db/README.md)
+  * [Postgres 기타.](etc/db/postgres-..md)
