@@ -195,7 +195,7 @@ commonName_max                  = 64
 <pre><code><strong>openssl req -new -key server.key -out server.csr -config server_openssl.cnf
 </strong></code></pre>
 
-4. 인증요청서파일(CSR)을 자체서명된인증기관(ROOT CA) 캐인키로 서명
+4. 인증요청서파일(CSR)을 자체서명된인증기관(ROOT CA) 개인키로 서명
 
 ```
 openssl x509 -req -days 3650 -extensions v3_user -in server.csr 
@@ -259,5 +259,5 @@ netsh http add sslcert ipport=127.0.0.1:8888 certhash=인증서지문 appid={"gu
 
 
 {% hint style="info" %}
-현재 openssl 최신버전(3.1.3)으로 pfx 파일 생성시 Win7,8에서 등록되지 않는 문제가 있습니다.
+현재 openssl 최신버전(3.1.3)으로 pfx 파일 생성시 Win7,8에서 등록되지 않는 문제가 있습니다. (암호 입력에서 실패)
 {% endhint %}
