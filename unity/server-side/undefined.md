@@ -58,11 +58,9 @@
 
 {% embed url="https://slproweb.com/products/Win32OpenSSL.html" %}
 
-
-
 <details>
 
-<summary>ROOT CA 생성</summary>
+<summary>ROOT CA(신뢰할 수 있는 기관) 인증서 생성</summary>
 
 1. 개인 키 생성(key)
 
@@ -128,8 +126,6 @@ openssl x509 -req -days 3650 -extensions v3_ca -set_serial 1 -in root_ca.csr
 ```
 
 </details>
-
-
 
 <details>
 
@@ -214,27 +210,45 @@ openssl x509 -req -days 3650 -extensions v3_user -in server.csr
 
 ### 윈도우에서 인증서를 사용하기 위한 설정
 
+
+
+{% hint style="info" %}
+윈도우에 신뢰할수 있는 루트 인증서로 root\_ca.crt 파일을 등록합니다. (물론 실제 신뢰못함)
+
+그리고 개인용 인증서에 server.pfx 인증서를 등록합니다. 이 인증서는 root\_ca가 발급한 것(명목상 신뢰할 수 있는 루트 기관) 이므로 외부에서는 이 인증서만 바라봅니다.
+
+_**즉 1 차 체크는 정상, 2차 체크로 루트 인증서가  정상인지 브라우저에서 검색하지만 인증기관 목록에 없는 상태.(**_1차 체크는 문법적 체크, 2차 체크는 실제유효성 체크)
+
+1차 체크는 브라우저에서 진행되므로, 실패 시 차단됩니다.&#x20;
+
+그러나 2차 체크의 허용 여부는 운영 서버에서 판단하므로, 경고 메시지가 와도 사전에 규약이 정해졌다면 무시하고 진행하게 됩니다.&#x20;
+{% endhint %}
+
+
+
 1. 윈도우에서 사용하기 위한 PFX 파일 변환
 
 ```
 openssl pkcs12 -export -in server.crt -inkey server.key -out server.pfx
 ```
 
-2. 컴퓨터 인증서에 지금 생성한 인증서 등록
+&#x20;2-1. 윈도우에 지금 생성한 server.pfx 인증서 등록 \
+&#x20;       (인증서 - 로컬컴퓨터 - 개인용 - 인증서에 생성됩니다.)
 
 ```
 certutil -f -p 암호 -importpfx server.pfx NoRoot
 ```
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>(인증서-로컬컴퓨터-개인용-인증서에 생성됩니다.)</p></figcaption></figure>
-
-3. Root CA 인증서 등록
+&#x20;2-2. 윈도우에 root\_ca.crt 인증서 등록 \
+&#x20;       (인증서 - 로컬컴퓨터 - 신뢰할 수 있는 루트 인증기관 - 인증서 에 생성됩니다.)
 
 ```
 certutil -addstore -f ROOT root_ca.crt
 ```
 
-4. 웹서버 프로그램 SSL 인증서 등록
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+3. SSL 인증서와 웹서버 프로그램을 등록
 
 ```
 netsh http add sslcert ipport=127.0.0.1:8888 certhash=인증서지문 appid={"guid"}
