@@ -245,7 +245,7 @@ certutil -f -p 암호 -importpfx server.pfx NoRoot
 certutil -addstore -f ROOT root_ca.crt
 ```
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. SSL 인증서와 웹서버 프로그램을 등록
 

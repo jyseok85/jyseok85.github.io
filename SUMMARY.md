@@ -28,6 +28,7 @@
 * [Web Report Desinger](blazor/web-report-desinger/README.md)
   * [1. 기본 프로젝트 구성](blazor/web-report-desinger/1..md)
   * [2. 레이아웃 구성](blazor/web-report-desinger/2..md)
+  * [3. UI 컴포넌트 설치](blazor/web-report-desinger/3.-ui.md)
 
 ## Unity
 
@@ -50,6 +51,5 @@
 * [Server-Side](etc/server-side/README.md)
   * [자체 서명 인증서 만들기](etc/server-side/undefined.md)
   * [Custom Uri Scheme](etc/server-side/custom-uri-scheme.md)
-  * [Page](etc/server-side/page.md)
 * [DB](etc/db/README.md)
   * [Postgres 기타.](etc/db/postgres-..md)
