@@ -29,6 +29,7 @@
   * [1. 기본 프로젝트 구성](blazor/web-report-desinger/1..md)
   * [2. 레이아웃 구성](blazor/web-report-desinger/2..md)
   * [3. UI 컴포넌트 설치](blazor/web-report-desinger/3.-ui.md)
+  * [4. 레이아웃 적용](blazor/web-report-desinger/4..md)
 
 ## Unity
 
