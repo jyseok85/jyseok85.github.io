@@ -31,6 +31,8 @@
   * [3. UI 컴포넌트 설치](blazor/web-report-desinger/3.-ui.md)
   * [4. 레이아웃 적용](blazor/web-report-desinger/4..md)
   * [5. 레이아웃 컨트롤로 분리](blazor/web-report-desinger/5..md)
+  * [눈금자](blazor/web-report-desinger/undefined.md)
+  * [6. 기본 컨트롤 추가](blazor/web-report-desinger/6..md)
 
 ## Unity
 
