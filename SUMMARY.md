@@ -34,6 +34,7 @@
   * [눈금자](blazor/web-report-desinger/undefined.md)
   * [용지 설정](blazor/web-report-desinger/undefined-1.md)
   * [6. 기본 컨트롤 추가](blazor/web-report-desinger/6..md)
+  * [테두리](blazor/web-report-desinger/undefined-2.md)
 
 ## Unity
 
