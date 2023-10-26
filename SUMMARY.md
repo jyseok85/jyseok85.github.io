@@ -6,6 +6,7 @@
 * [Winform](windows/winform/README.md)
   * [Table of contents](windows/winform/summary.md)
   * [Winform HiDpi 팁](windows/winform/hidpi.md)
+  * [EXE 디버깅](windows/winform/exe.md)
 
 ## Blazor
 
