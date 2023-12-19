@@ -4,6 +4,12 @@ description: 바인딩 된 인쇄 미리보기를 PPT로 변환
 
 # PPT 변환
 
+{% hint style="info" %}
+개발기간 : 2023.11 \~ 2023.12
+{% endhint %}
+
+
+
 과거 WebViewer와 .Net Framework에서 OPENXML 모듈을 이용해서 WORD로 변환한 경험이 있습니다.&#x20;
 
 
