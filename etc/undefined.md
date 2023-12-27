@@ -18,7 +18,8 @@
 개발 순서&#x20;
 
 1. 이미지 일치 여부 프로그램 개발\
-   (오픈소스로   이미 많이있을 거라고 생각됨.)
+   (오픈소스로  이미 많이있을 거라고 생각되며, 아래소스가  제일 간단함)\
+   [https://github.com/xnafan/Simple-image-comparison.git](https://github.com/xnafan/Simple-image-comparison.git)
 2. 인쇄 미리보기를 이미지 저장
 3. 인쇄 미리보기를 각종 파일로 변환 후 이미지 변환\
    \-> Microsoft PDF 프린터로변환된 파일을 PDF로 변환 -> PDF를 이미지 변환
