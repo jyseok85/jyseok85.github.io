@@ -48,6 +48,7 @@
 
 ## ETC
 
+* [프로그램 배포 시스템 개발 이력](etc/undefined.md)
 * [Nsis 문자열 검색](etc/nsis.md)
 * [Monitoring](etc/monitoring/README.md)
   * [1.tempo-grafana-prometheus](etc/monitoring/1.tempo-grafana-prometheus.md)
@@ -61,4 +62,4 @@
 * [DB](etc/db/README.md)
   * [Postgres 기타.](etc/db/postgres-..md)
 * [PPT 변환](etc/ppt.md)
-* [파일 변환 일치율 시스템 제작(취소)](etc/undefined.md)
+* [파일 변환 일치율 시스템 제작(취소)](etc/undefined-1.md)
