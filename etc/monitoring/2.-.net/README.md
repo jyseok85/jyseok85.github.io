@@ -12,7 +12,7 @@ description: '개발환경 : vs2022,  .Net7,  Win11, Swagger'
 
 <figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 누겟 패키지 설치
 
@@ -22,7 +22,7 @@ OpenTelemetry.Instrumentation.AspNetCore 1.0.0-rc9.14
 OpenTelemetry.Exporter.Console 1.4.0
 ```
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 program.cs 에 다음 코드를 삽입합니다.
 

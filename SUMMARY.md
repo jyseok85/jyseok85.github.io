@@ -10,6 +10,7 @@
 
 ## Blazor
 
+* [BuildRenderTree 팁](blazor/buildrendertree.md)
 * [.Net5 -> .Net7 변경점](blazor/.net5-greater-than-.net7.md)
 * [Blazor 에 Api Controller 추가](blazor/blazor-api-controller.md)
 * [Blazor 에서 .NET Framework 참조](blazor/blazor-.net-framework.md)
