@@ -37,6 +37,7 @@
   * [용지 설정](blazor/web-report-desinger/undefined-1.md)
   * [6. 기본 컨트롤 추가](blazor/web-report-desinger/6..md)
   * [테두리](blazor/web-report-desinger/undefined-2.md)
+  * [텍스트 속성 정리](blazor/web-report-desinger/undefined-3.md)
 
 ## Unity
 
@@ -49,6 +50,9 @@
 
 ## ETC
 
+* [브라우저에서 EXE 실행](etc/exe/README.md)
+  * [Local Server](etc/exe/local-server.md)
+  * [Custom Uri Scheme 설치 체크](etc/exe/custom-uri-scheme.md)
 * [프로그램 배포 시스템 개발 이력](etc/undefined.md)
 * [Nsis 문자열 검색](etc/nsis.md)
 * [Monitoring](etc/monitoring/README.md)
@@ -59,7 +63,6 @@
   * [Loki 와 Tempo의 UID 연동](etc/monitoring/loki-tempo-uid.md)
 * [Server-Side](etc/server-side/README.md)
   * [자체 서명 인증서 만들기](etc/server-side/undefined.md)
-  * [Custom Uri Scheme](etc/server-side/custom-uri-scheme.md)
 * [DB](etc/db/README.md)
   * [Postgres 기타.](etc/db/postgres-..md)
 * [PPT 변환](etc/ppt.md)

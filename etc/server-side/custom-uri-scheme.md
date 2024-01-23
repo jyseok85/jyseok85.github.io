@@ -1,2 +1,0 @@
-# Custom Uri Scheme
-
