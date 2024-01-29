@@ -38,6 +38,7 @@
   * [6. 기본 컨트롤 추가](blazor/web-report-desinger/6..md)
   * [테두리](blazor/web-report-desinger/undefined-2.md)
   * [텍스트 속성 정리](blazor/web-report-desinger/undefined-3.md)
+  * [Html Table 테두리!](blazor/web-report-desinger/html-table.md)
 
 ## Unity
 
