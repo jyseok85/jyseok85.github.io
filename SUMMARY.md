@@ -39,6 +39,7 @@
   * [테두리](blazor/web-report-desinger/undefined-2.md)
   * [텍스트 속성 정리](blazor/web-report-desinger/undefined-3.md)
   * [Html Table 테두리!](blazor/web-report-desinger/html-table.md)
+  * [테이블 사이즈 조절](blazor/web-report-desinger/undefined-4.md)
 
 ## Unity
 
