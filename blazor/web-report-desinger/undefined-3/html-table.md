@@ -1,4 +1,4 @@
-# Html Table 테두리!
+# Html Table 컨트롤 테두리!
 
 기본적으로 테이블 생성시 겹치는 셀은 두줄로 나옵니다.&#x20;
 
@@ -8,7 +8,7 @@ border-collapse : collapse; 를 설정하면 한줄로 나옵니다.&#x20;
 
 ### 만약 셀 너비를 10px로 3개 만들었다면&#x20;
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 * 각 셀은 10px로 생성
 * 셀 외각으로 각 셀 테두리의 1/2 만큼 영역이 존재. \
@@ -19,11 +19,11 @@ border-collapse : collapse; 를 설정하면 한줄로 나옵니다.&#x20;
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -61,3 +61,10 @@ col row 병합시에 수동으로 영역 지정한건 또 제대로 안먹음.
 
 이럴꺼면 그냥 자체 테이블 컨트롤을 만듬..
 
+
+
+### 물론.&#x20;
+
+border-collapse : collapse;  이 속성을 사용하지 않는다면 위의 모든 고민을 할 필요 없이 간단하게 사용하면 됨.&#x20;
+
+모든 문제가 내부 1px로 대충이라도 표시해주자 하는 저 속성 때문에 발생한 문제.
