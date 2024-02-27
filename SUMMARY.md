@@ -66,6 +66,7 @@
     * [Tempo Test](etc/monitoring/2.-.net/tempo-test.md)
   * [3. Springboot 환경에서 자동계측](etc/monitoring/3.-springboot.md)
   * [Loki 와 Tempo의 UID 연동](etc/monitoring/loki-tempo-uid.md)
+  * [PushGateWay로 Metric전송하기](etc/monitoring/pushgateway-metric.md)
 * [Server-Side](etc/server-side/README.md)
   * [자체 서명 인증서 만들기](etc/server-side/undefined.md)
 * [DB](etc/db/README.md)
