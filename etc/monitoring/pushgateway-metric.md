@@ -31,6 +31,7 @@ PushGateWay로 전송하기 위해
 <pre class="language-csharp"><code class="lang-csharp"><strong>public Send()
 </strong><strong>{
 </strong>    string pushGatewayUri = "";
+    //CPU 정보를 가져오는 별도의 로직을 통해서 값을 가져왔다고 가정.
     string myParameters = MakeMetric("CPU", 20, Type.gauge);
 <strong>    using (WebClient wc = new WebClient())
 </strong>    {
