@@ -97,3 +97,32 @@ a.razor 파일을 만들고 동일한 네이밍으로 css 를 만들어서&#x20;
 blazor에서 컴파일시 생성해 주는 css를 저 외부컴포넌트에서 읽을 방법이 없기 때문이다.&#x20;
 
 기존처럼 별도의 css로 작업하던가, 귀찮으면 a.razor 파일에 스타일을 추가하는 방법을 사용해야 한다.&#x20;
+
+
+
+
+
+## 비동기로 화면 갱신
+
+StateHasChanged()
+
+를 호출 하면, 화면이 다시 렌더링 된다.&#x20;
+
+그러나 비동기로 호출시 저 코드는 동작하지 않고, 사용자의 액션(보통은 마우스 무브에서 발생)이 있은 후 갱신되게 된다.&#x20;
+
+그럴 경우 저 StateHasChanged() 도 비동기로 호출 하면 정상동작 된다.&#x20;
+
+```csharp
+private async void Refresh()
+{
+    await InvokeAsync(() => {
+        StateHasChanged();
+    });
+}
+```
+
+그러나 우리가 원하는건 다음이지 않을까? 추가 되기를 기대한다.&#x20;
+
+```csharp
+await StateHasChangedAsync(); 
+```
