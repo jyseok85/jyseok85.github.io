@@ -150,19 +150,17 @@ private List<string> GetStacks(int stackLevel = 2)
 해당 조건에 맞는 함수가 호출되면
 
 1. 지정한 시간동안 특정 레벨 이상 로그를 전부 작성한다.
-2. 지정한 라인만큼 특정 레벨 이상 로그를 전부 작성한다.&#x20;
+2. 지정한 횟수만큼 특정 레벨 이상 로그를 전부 작성한다.&#x20;
 
-```ini
-LogLevel = Info
-UseDetailLogging = ture or false
-DetailLoggingLevel = trace
-//A or B 함수가 호출되면 상세 로그 작성
-DetailLoggingFuntion = A,B 
-DetailLoggingEndCondition = Time or Line
-DetailLoggingEndValue = 1000 // 1000초나 1000라인
-//상세 로깅중에 다시 상세 로직 함수가 들어올 경우 
-//종료 조건(시간 or 라인)을 초기화 시킬지 여부
-DetailLoggingValueUpdate = true or false 
+```json
+{
+    "LogLevel": "trace",
+    "UseDetailLogging": true,
+    "DetailLogLevel": "trace",
+    "DetailLogFunction": "A,B", //A or B 함수가 호출되면 상세 로그 작성
+    "DetailLogEndCondition": "Count", //or time
+    "DetailLogEndValue": 1000 // 1000초나 1000번 등
+}
 ```
 
 위와 같이 설정한 경우 다음과 같이 사용자 액션에 의해 발생된 시나리오 측정이 가능하다.
