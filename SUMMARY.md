@@ -53,6 +53,10 @@
   * [4. 실제 적용 취소한 이유](unity/ml-agent/4..md)
   * [Tip](unity/ml-agent/tip.md)
 
+***
+
+* [완벽한 로깅을 향하여](undefined.md)
+
 ## ETC
 
 * [브라우저에서 EXE 실행](etc/exe/README.md)
