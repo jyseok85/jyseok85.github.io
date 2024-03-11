@@ -1,18 +1,33 @@
-# 답답한 IIS
+# 관리자권한으로 CMD 실행
 
-답답하고 말씀드리는 이유는 보안 때문입니다...
+배치파일을 실행하게 되면 현재 유저의 권한으로 실행된다.
 
+이것을 다시관리자 권한으로 한번 더 상승시키는 코드
 
-
-가상디렉토리를 추가후에 접근하는 AppPool에서 권한을 넣어야 합니다.&#x20;
-
-
-
-매번 서버 설치시 IIS 설정을 넣기는 번거롭기 때문에 설치 자동화를 위해서 아래의 파일을 참고.
-
-C:\Windows\System32\inetsrv\config\applicationHost.config
-
-
-
-
-
+```batch
+@echo off
+ :: BatchGotAdmin
+ :-------------------------------------
+ REM  --> Check for permissions
+ >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+ 
+REM --> If error flag set, we do not have admin.
+ if '%errorlevel%' NEQ '0' (
+     echo Requesting administrative privileges...
+     goto UACPrompt
+ ) else ( goto gotAdmin )
+ 
+:UACPrompt
+     echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+     echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
+ 
+    "%temp%\getadmin.vbs"
+     exit /B
+ 
+:gotAdmin
+     if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
+     pushd "%CD%"
+     CD /D "%~dp0"
+ :--------------------------------------
+//원하는 명령어 실행
+```

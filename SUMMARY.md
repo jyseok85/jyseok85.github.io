@@ -2,7 +2,8 @@
 
 ## Windows
 
-* [답답한 IIS](README.md)
+* [관리자권한으로 CMD 실행](README.md)
+* [답답한 IIS](<README (1).md>)
 * [Winform](windows/winform/README.md)
   * [Table of contents](windows/winform/summary.md)
   * [Winform HiDpi 팁](windows/winform/hidpi.md)
