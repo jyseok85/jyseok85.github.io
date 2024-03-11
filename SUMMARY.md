@@ -36,13 +36,13 @@
   * [5. 레이아웃 컨트롤로 분리](blazor/web-report-desinger/5..md)
   * [6. 눈금자](blazor/web-report-desinger/6..md)
   * [7. 용지 설정](blazor/web-report-desinger/7..md)
-  * [작업 이력](blazor/web-report-desinger/undefined.md)
-  * [테두리](blazor/web-report-desinger/undefined-1.md)
-  * [텍스트 속성 정리](blazor/web-report-desinger/undefined-2.md)
+  * [테두리](blazor/web-report-desinger/undefined.md)
+  * [텍스트 속성 정리](blazor/web-report-desinger/undefined-1.md)
+  * [컨트롤에 텍스트 사이즈 맞추기](blazor/web-report-desinger/undefined-2.md)
   * [테이블](blazor/web-report-desinger/undefined-3/README.md)
     * [Html Table 컨트롤 테두리!](blazor/web-report-desinger/undefined-3/html-table.md)
     * [테이블 사이즈 조절](blazor/web-report-desinger/undefined-3/undefined.md)
-  * [컨트롤에 텍스트 사이즈 맞추기](blazor/web-report-desinger/undefined-4.md)
+  * [작업 이력](blazor/web-report-desinger/undefined-4.md)
 
 ## Unity
 

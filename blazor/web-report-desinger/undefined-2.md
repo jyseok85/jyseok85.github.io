@@ -1,51 +1,35 @@
-# 텍스트 속성 정리
+# 컨트롤에 텍스트 사이즈 맞추기
 
-개행 포함하기
+전통적인 문서 편집툴의 경우
 
-white-space:pre
+텍스트의 그래픽객체를 통해서 텍스트  사이즈를 측정   (measuretext)&#x20;
 
-자동줄바꿈(기본값)
+웹의 경우에도 캔버스를 사용할 경우에는 동일 한 방식을 사용하지만
 
-white-space:normal&#x20;
-
-개행없음
-
-white-space:nowrap
+순수 HTML 의 경우에는 사이즈를 측정할 방법이 없다.&#x20;
 
 
 
-영역을 벗어나도 텍스트 보이기
+그래서 다음과 같이 외부 컨트롤과 내부 컨트롤을 분리해야 한다.&#x20;
 
-overflow:visible
+외부의 경우 지정한 사이즈를 사용하고, 내부의 경우 텍스트에 따라서 자동으로 변경되도록 한다.&#x20;
 
+```
+<div class='outer'>
+    <div class='inner'>
+        텍스트
+    </div>
+</div>
+```
 
+그러면 내부가 외부보다 더 커질텐데 이 사이즈의 비율에 따라서
 
-영역을 벗어나면 말줄임표(...)표시
+transform:scaleX(value);&#x20;
 
-white-space:pre or nowrap
-
-overflow:hidden
-
-text-overflow:ellipsis
-
-주의 : display 타입에 따라서 적용됨.
-
-
-
-display : block 에서 정렬
-
-text-align: start center end justify
-
-주의: word-break 속성이 있을경우 기능이 약간 달라짐..
-
-justfiy 의 경우 white-space:normal 경우에 동작
+를 통해서 내부 텍스트의 비율을 변경해주면 된다.&#x20;
 
 
 
-word-break:
+Blazor의 경우 내부 컨트롤의 사이즈가 변경되는 시점을 정확히 가져올 방법이 없다.&#x20;
 
-1. normal : 단어 단위로 자름(영어), 한국어 글자 단위로 잘림
-2. keep-all : 단어 단위로 자름(한국어,영어)
-3. break-all : 글자 단위로 자름(한국어,영어)
-
-즉. 일반적이라면 keep-all 이나 break-all 둘중하나 사용하면 될 듯 보인다.
+그러므로 JavaScript에서 내부 컨트롤을 관찰하고 사이즈가 변경되면 Blazor 쪽으로 이벤트를 호출 하는 방법을 사용하도록 한다.&#x20;
