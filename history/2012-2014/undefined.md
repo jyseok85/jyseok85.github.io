@@ -1,16 +1,25 @@
-# 데이터 가져가는 외부 프로세스 차단 프로그램
+# 공인회계시험 채점 간소화 프로그램 개발
 
-4insuLink 라는곳에서  SmartA 의 데이터를 스크랩해가는 프로그램을 막는 작업
+#### 배경
 
-지금 생각해보면 굳이 이런걸 해야 하나 싶지만.
+업무의 과중화로 최대한 자동화 시키기 위하여 개발
 
-다음과 같은 방법으로 설치 및 실행 체크를 해서 해당 프로그램을 차단.
+`반년정도 업무를 담당하다 보니 일정 부분 범용 패턴이 보이기 시작했고,  그룹화를 잘 하면 가능하다고 판단되어 시작`
 
-<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+#### 기존의 채점방식
 
-창과 방패의 싸움으로 패치하더라도, 해당 업체에서 바로 리플렉터로  소스를  분석하기 때문에
+* 회계시험의 경우 일반적인 객관식이 아니라, DB에 입력되는 시험이기 때문에, \
+  각 메뉴별로 사용하는 테이블과 UI에 입력된 위치와 컬럼 스키마정보를 정확하게 알고, 테이블명세서를 보면서 하나하나 찾아서 개발해야해서(총 대상 테이블 1000개이상) 오래 걸릴 수 밖에 없음.
 
-기존 난독화 툴을 제거하고, 사용자의 실수를 유도하도록 난독화  처리
+#### 개발목표
 
-(함수 주석을 반대로 작성, 바코드문자열 사용, 일본어변수 사용, 쓰레기 변수사용 후 아무작업안함 ,  실제 핵심 로직용 exe  추가 후 아무 의미없는 이름사용  등)
+* 1차 - 테이블과 쿼리를 몰라도 채점이 가능한 로직을 만들기\
+  (UI 보이는 메뉴명과, 컴포넌트 명칭만 갖고 채점)
+* 2차 - 코딩 없는 프로그램 개발
+
+<figure><img src="https://1.bp.blogspot.com/-ww6uvlWcyr4/YKVerhj18aI/AAAAAAAAHXs/dO3C1bX0YmYJdStry6_LnSruG6oPcmnvACLcBGAsYHQ/s16000/image.png" alt=""><figcaption><p>1차 개선(기존 좌, 개선 우)</p></figcaption></figure>
+
+1차 개선 유형이 50개쯤 넘어갔을때, 이걸 개발자가 할께 아니라.  일반 사용자가 가능하도록 프로그램을 만들 수도 있을것 같다고 생각되어 2차 개선 시작
+
+<figure><img src="https://1.bp.blogspot.com/-5aWwF1XAERA/YKVerlI__eI/AAAAAAAAHXo/EazqFT5P1ds6O1J7sNhc-aRyBqKHVkwQwCLcBGAsYHQ/s16000/image%2B%281%29.png" alt=""><figcaption><p>2차 개선 버전 샘플</p></figcaption></figure>
 
