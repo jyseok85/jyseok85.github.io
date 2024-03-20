@@ -24,11 +24,11 @@ Html Tag 대신에 BuildRenderTree를 이용해서 구성할 수 있다는 것�
 
 그 라인을 더블 클릭하면 디컴파일이 되면서 Razor 파일이 실질적인 CS코드가 반환됩니다.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 그 CS코드에는 HTML Tag 대신에 BuildRenderTree가 있구요.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 그러나, 굳이 사용해야 하는지 의문이긴 합니다.&#x20;
 
