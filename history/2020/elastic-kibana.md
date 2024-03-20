@@ -11,10 +11,6 @@
 * 각 서버별 시스템 자원상태 분석
 * 유저별 접속 정보 통계 분석
 
-담당업무
-
-* 단독개발
-
 사용기술
 
 * ElasticSearch, Kibana, Metricbeat, Apm
