@@ -10,7 +10,17 @@
   * [PPT 변환](history/2023/ppt.md)
 * [2016 \~ 2018](history/page-5.md)
   * [경영 시뮬레이션 게임 플랫폼 개발(수정필요)](history/2016-2018/undefined.md)
-  * [프로그램 배포 시스템 개발](history/2016-2018/undefined-1.md)
+  * [프로그램 배포 시스템 개발](etc/undefined.md)
+* [2020](history/2020/README.md)
+  * [Unity로 구현한 웹 리포트 뷰어](history/2020/unity.md)
+  * [Blazor 로 구현한 웹 리포트 뷰어](history/2020/blazor.md)
+  * [Elastic 및 Kibana로 모니터링](history/2020/elastic-kibana.md)
+* [2021](history/2021/README.md)
+  * [Unity Webgl 화상면접 공간 개발](history/2021/unity-webgl.md)
+  * [Prometheus & Grafana 로 모니터링](history/2021/prometheus-and-grafana.md)
+  * [Postgres Streaming Replication](history/2021/postgres-streaming-replication.md)
+  * [OpenAPI 를 이요한 Xamarin App 개발](history/2021/openapi-xamarin-app.md)
+* [Page 1](history/page-1.md)
 
 ## Windows
 
@@ -87,4 +97,4 @@
   * [자체 서명 인증서 만들기](etc/server-side/undefined.md)
 * [DB](etc/db/README.md)
   * [Postgres 기타.](etc/db/postgres-..md)
-* [파일 변환 일치율 시스템 제작(취소)](etc/undefined.md)
+* [파일 변환 일치율 시스템 제작(취소)](etc/undefined-1.md)
