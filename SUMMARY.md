@@ -6,6 +6,8 @@
   * [공인회계시험 채점 간소화 프로그램 개발](history/2012-2014/undefined.md)
   * [Sybase 프로시저 제거작업](history/2012-2014/sybase.md)
   * [데이터 가져가는 외부 프로세스 차단 프로그램](history/2012-2014/undefined-1.md)
+* [2023 \~](history/2023/README.md)
+  * [PPT 변환](history/2023/ppt.md)
 * [Page 5](history/page-5.md)
 
 ## Windows
@@ -84,5 +86,4 @@
   * [자체 서명 인증서 만들기](etc/server-side/undefined.md)
 * [DB](etc/db/README.md)
   * [Postgres 기타.](etc/db/postgres-..md)
-* [PPT 변환](etc/ppt.md)
 * [파일 변환 일치율 시스템 제작(취소)](etc/undefined-1.md)
