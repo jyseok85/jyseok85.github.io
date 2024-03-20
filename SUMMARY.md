@@ -8,8 +8,9 @@
   * [데이터 가져가는 외부 프로세스 차단 프로그램](history/2012-2014/undefined-1.md)
 * [2023 \~](history/2023/README.md)
   * [PPT 변환](history/2023/ppt.md)
-* [2016 \~ 2018](history/2016-2018/README.md)
+* [2016 \~ 2018](history/page-5.md)
   * [경영 시뮬레이션 게임 플랫폼 개발(수정필요)](history/2016-2018/undefined.md)
+  * [프로그램 배포 시스템 개발](history/2016-2018/undefined-1.md)
 
 ## Windows
 
@@ -74,7 +75,6 @@
 * [브라우저에서 EXE 실행](etc/exe/README.md)
   * [Local Server](etc/exe/local-server.md)
   * [Custom Uri Scheme 설치 체크](etc/exe/custom-uri-scheme.md)
-* [프로그램 배포 시스템 개발 이력](etc/undefined.md)
 * [Nsis 문자열 검색](etc/nsis.md)
 * [Monitoring](etc/monitoring/README.md)
   * [1.tempo-grafana-prometheus](etc/monitoring/1.tempo-grafana-prometheus.md)
@@ -87,4 +87,4 @@
   * [자체 서명 인증서 만들기](etc/server-side/undefined.md)
 * [DB](etc/db/README.md)
   * [Postgres 기타.](etc/db/postgres-..md)
-* [파일 변환 일치율 시스템 제작(취소)](etc/undefined-1.md)
+* [파일 변환 일치율 시스템 제작(취소)](etc/undefined.md)
