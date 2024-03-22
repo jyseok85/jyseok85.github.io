@@ -14,7 +14,7 @@
 
 물론 표를 사용해도 됩니다만, 표를 사용함으로 인하여 다른문제가 발생할 가능성이 있습니다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>외각선은 1px 로 정확히 처리 되었지만, 내부는 2픽셀로 보이는 상태</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>외각선은 1px 로 정확히 처리 되었지만, 내부는 2픽셀로 보이는 상태</p></figcaption></figure>
 
 
 

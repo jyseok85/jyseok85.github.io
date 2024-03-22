@@ -35,7 +35,7 @@ var traceid = Span.current().getSpanContext().getTraceId();
 
 4. 로키로 넘어온 데이터를 키:값 형태로 패턴화 합니다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>패턴화 예제</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>패턴화 예제</p></figcaption></figure>
 
 5. 그라파나 로키 데이터 소스에서 해당 패턴화된 데이터를 Derived fields로 설정합니다.
 
