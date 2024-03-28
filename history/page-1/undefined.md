@@ -44,11 +44,10 @@ app.MapGet("/weatherforecast", () =>
 });
 ```
 
-여기서 return 을 WeatherForecast\[] 로 해주고 있고,&#x20;
+Trim-Mode 적용시 다음과 같은 문제가 있습니다.
 
-WeatherForecast\[]를 시스템 내부적으로 json 변환해서 넘겨주는데
-
-내부적으로 변환하는 것이 실패하게 됩니다.&#x20;
+1. WeatherForecast 를 리턴해줄때 Json 변환시 문제
+2. Var 변수 사용
 
 
 
@@ -69,3 +68,7 @@ JsonSerializer.Serialize(forecast);
 C#은 C랑 실질적으로 속도차이가 거의 없다고 합니다.&#x20;
 
 느린이유는 전부 리플렉션때문이라고 생각됩니다.&#x20;
+
+
+
+[https://learn.microsoft.com/ko-kr/dotnet/standard/serialization/system-text-json/source-generation?pivots=dotnet-8-0](https://learn.microsoft.com/ko-kr/dotnet/standard/serialization/system-text-json/source-generation?pivots=dotnet-8-0)
