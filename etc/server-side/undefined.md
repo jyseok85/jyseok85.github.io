@@ -46,6 +46,8 @@
 
 
 
+<img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
 #### 작업내용
 
 * 스스로 서명한 인증기관 인증서(ROOT CA = Self Signed Certificate(SSC) 만들기
@@ -226,7 +228,8 @@ _**즉 1 차 체크는 정상, 2차 체크로 루트 인증서가  정상인지 
 
 
 
-1. 윈도우에서 사용하기 위한 PFX 파일 변환
+1. 윈도우에서 사용하기 위한 PFX 파일 변환\
+   (server.crt , server.key 를 하나로 합쳐서 pfx 파일배포합니다. )
 
 <pre><code><strong>openssl pkcs12 -export -in server.crt -inkey server.key -out server.pfx
 </strong></code></pre>
@@ -253,7 +256,7 @@ certutil -addstore -f ROOT root_ca.crt
 netsh http add sslcert ipport=127.0.0.1:8888 certhash=인증서지문 appid={"guid"}
 ```
 
-* appid의 경우 어플리케이션을 식별하는 GUID 입니다. 임의의 값을 입력 가능합니다.&#x20;
+* appid의 경우 어플리케이션을 식별하는 GUID 입니다. 임의의 값을 입력 가능합니다.  실제 프로그램과 연관 없습니다.&#x20;
 * 인증서 지문의 경우 server.crt 파일을실행 후 자세히 탭 맨 아래에 있습니다.&#x20;
 
 
