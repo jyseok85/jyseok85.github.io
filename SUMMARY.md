@@ -84,6 +84,7 @@
 ## ETC
 
 * [브라우저에서 EXE 실행](etc/exe/README.md)
+  * [로컬웹에이전트 운영후기](etc/exe/undefined.md)
   * [Local Server](etc/exe/local-server.md)
   * [Custom Uri Scheme 설치 체크](etc/exe/custom-uri-scheme.md)
 * [Nsis 문자열 검색](etc/nsis.md)
