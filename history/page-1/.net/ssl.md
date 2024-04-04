@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 //인증서 추가
 builder.WebHost.ConfigureKestrel((context, serverOptions) =>
 {
-    serverOptions.Listen(IPAddress.Loopback, 8235, listenOptions =>
+    serverOptions.Listen(IPAddress.Loopback, 포트번호, listenOptions =>
     {
         listenOptions.UseHttps("pfx 파일경로", "비밀번호");
     });
