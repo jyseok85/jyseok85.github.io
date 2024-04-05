@@ -250,7 +250,15 @@ certutil -addstore -f ROOT root_ca.crt
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. SSL 인증서와 웹서버 프로그램을 등록
+{% hint style="info" %}
+현재 openssl 최신버전(3.1.3)으로 pfx 파일 생성시 Win7,8에서 등록되지 않는 문제가 있습니다. (암호 입력에서 실패)
+{% endhint %}
+
+### SSL 인증서를 아이피 와 포트에 바인딩하기
+
+운영체제는 해당 IP와 Port로 SSL 을 사용한다는 것을 알고 있어야 합니다.&#x20;
+
+윈도우의 경우 다음과 같은 방법으로 전역 설정이 가능합니다.&#x20;
 
 ```
 netsh http add sslcert ipport=127.0.0.1:8888 certhash=인증서지문 appid={"guid"}
@@ -259,8 +267,5 @@ netsh http add sslcert ipport=127.0.0.1:8888 certhash=인증서지문 appid={"gu
 * appid의 경우 어플리케이션을 식별하는 GUID 입니다. 임의의 값을 입력 가능합니다.  실제 프로그램과 연관 없습니다.&#x20;
 * 인증서 지문의 경우 server.crt 파일을실행 후 자세히 탭 맨 아래에 있습니다.&#x20;
 
+물론 시스템 등록이 아닌, 프로그램 실행시 등록하는 방법도 있습니다.&#x20;
 
-
-{% hint style="info" %}
-현재 openssl 최신버전(3.1.3)으로 pfx 파일 생성시 Win7,8에서 등록되지 않는 문제가 있습니다. (암호 입력에서 실패)
-{% endhint %}
