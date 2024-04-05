@@ -8,10 +8,10 @@
 담당업무- JS , CSS를 제외한 BackEnd 서버 개발, Linux 셋팅, Nginx 웹서버, 로드밸런싱 구성- 현재 유지보수 단계에서는 단독으로 담당중.\
 
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 사용기술- Net5, Blazor, Nginx, Docker\
 개발이슈사항- 막연히 클라이언트로 실행되는 WASM이 성능상 이점이 있을것으로 생각했으나, 현재(2020년) Blazor를 통한 WASM은 싱글스레드로 동작되어 성능이 낮은 문제가 있었습니다. - 더 큰 문제는 WASM에서 브라우저로 데이터를 전달하는 과정에서 Json Serialize 시간이 1MB 당 1초정도로 오래 걸리는 문제가 있었습니다. .Net 버전이 증가함에 따라 속도 향샹이 있었지만 서버처럼 1/100로 속도가 단축되지 않는이상 의미가 없다고 생각되어 Server-Side로 변경을 진행했습니다.    (앞으로 기술 발전에따라 성능이 개선될거라 생각되어 양쪽 버전 전부 동작되게 소스를 관리중입니다.)- Server Side로 작업을 진행하니 다중 사용자에 의한 성능 부하 발생이라는 문제점이 생겨나게 되어 프록시서버를 통한 로드밸런싱 및 다수의 서버에 일관성있는 배포를 위한 도커환경을 구성하게 되었습니다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

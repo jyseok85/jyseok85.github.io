@@ -20,4 +20,4 @@
 
 다국어 지원시 PC에 각 폰트가 설치되지 않아도 되는 장점이 있지만, 각 언어별로 만드는 폰트가 커서 역시 배포용량이 늘어나는 단점도 있습니다.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

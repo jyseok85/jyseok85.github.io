@@ -83,6 +83,7 @@
 
 ## ETC
 
+* [Synology + Git Server + Gitea](etc/synology-+-git-server-+-gitea.md)
 * [브라우저에서 EXE 실행](etc/exe/README.md)
   * [1. Local Server](etc/exe/local-server.md)
   * [2. Custom Uri Scheme](etc/exe/2.-custom-uri-scheme.md)
