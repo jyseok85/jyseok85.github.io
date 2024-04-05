@@ -248,7 +248,7 @@ certutil -f -p 암호 -importpfx server.pfx NoRoot
 certutil -addstore -f ROOT root_ca.crt
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 현재 openssl 최신버전(3.1.3)으로 pfx 파일 생성시 Win7,8에서 등록되지 않는 문제가 있습니다. (암호 입력에서 실패)

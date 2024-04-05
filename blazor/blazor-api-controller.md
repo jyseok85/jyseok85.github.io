@@ -17,7 +17,7 @@ app.MapControllers();
 
 ### 2. 테스트용Api 컨트롤러 추가
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% code title="ValuesController.cs" %}
 ```csharp

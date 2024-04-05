@@ -12,7 +12,7 @@ _**프로그램만 간단한게 아니라 배포도 간단해야 합니다.**_
 
 ## 파일 게시 옵션
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **ReadyToRun(R2R) 컴파일 사용 (AOT)**
 
@@ -112,11 +112,11 @@ Using member 'Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExten
 * 프로젝트 생성시에도 따로 Trim-mode 에 대한 설명은 없습니다.&#x20;
 * Triming 을 하기 위해선 최소 프로젝트(ASP.NET Core 웹  API(native AOT)) 로 생성해야 합니다.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 물론 완전 빈 프로젝트를 생성 해도 되지만, 사용방법을 모르니까 가능하면 기본 샘플을 있는 프로젝트를 선택하는 것이 좋다고 생각됩니다.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 

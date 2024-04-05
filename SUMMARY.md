@@ -6,8 +6,6 @@
   * [공인회계시험 채점 간소화 프로그램 개발](history/2012-2014/undefined.md)
   * [Sybase 프로시저 제거작업](history/2012-2014/sybase.md)
   * [데이터 가져가는 외부 프로세스 차단 프로그램](history/2012-2014/undefined-1.md)
-* [2023 \~](history/2023/README.md)
-  * [PPT 변환](history/2023/ppt.md)
 * [2016 \~ 2018](history/page-5.md)
   * [경영 시뮬레이션 게임 플랫폼 개발(수정필요)](history/2016-2018/undefined.md)
   * [프로그램 배포 시스템 개발](etc/undefined.md)
@@ -19,7 +17,8 @@
   * [Unity Webgl 화상면접 공간 개발](history/2021/unity-webgl.md)
   * [Prometheus & Grafana 로 모니터링](history/2021/prometheus-and-grafana.md)
   * [Postgres Streaming Replication](history/2021/postgres-streaming-replication.md)
-  * [OpenAPI 를 이요한 Xamarin App 개발](history/2021/openapi-xamarin-app.md)
+* [2023 \~](history/2023/README.md)
+  * [PPT 변환](history/2023/ppt.md)
 * [Page 1](history/page-1/README.md)
   * [.NET 간단한 웹 서버](history/page-1/.net/README.md)
     * [SSL 인증서 적용](history/page-1/.net/ssl.md)
@@ -85,7 +84,7 @@
 ## ETC
 
 * [브라우저에서 EXE 실행](etc/exe/README.md)
-  * [1. Local Server](etc/exe/1.-local-server.md)
+  * [1. Local Server](etc/exe/local-server.md)
   * [2. Custom Uri Scheme](etc/exe/2.-custom-uri-scheme.md)
   * [Custom Uri Scheme 설치 체크](etc/exe/custom-uri-scheme.md)
   * [로컬웹에이전트 운영후기](etc/exe/undefined.md)
