@@ -85,9 +85,10 @@
 ## ETC
 
 * [브라우저에서 EXE 실행](etc/exe/README.md)
-  * [로컬웹에이전트 운영후기](etc/exe/undefined.md)
-  * [Local Server](etc/exe/local-server.md)
+  * [1. Local Server](etc/exe/1.-local-server.md)
+  * [2. Custom Uri Scheme](etc/exe/2.-custom-uri-scheme.md)
   * [Custom Uri Scheme 설치 체크](etc/exe/custom-uri-scheme.md)
+  * [로컬웹에이전트 운영후기](etc/exe/undefined.md)
 * [Nsis 문자열 검색](etc/nsis.md)
 * [Monitoring](etc/monitoring/README.md)
   * [1.tempo-grafana-prometheus](etc/monitoring/1.tempo-grafana-prometheus.md)
