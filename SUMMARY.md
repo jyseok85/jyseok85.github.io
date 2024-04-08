@@ -83,14 +83,15 @@
 
 ## ETC
 
-* [NSIS](etc/nsis.md)
+* [NSIS](etc/nsis/README.md)
+  * [파일에서 텍스트 교체](etc/nsis/undefined.md)
+  * [문자열 검색](etc/nsis/undefined-1.md)
 * [Synology + Git Server + Gitea](etc/synology-+-git-server-+-gitea.md)
 * [브라우저에서 EXE 실행](etc/exe/README.md)
   * [1. Local Server](etc/exe/local-server.md)
   * [2. Custom Uri Scheme](etc/exe/2.-custom-uri-scheme.md)
   * [Custom Uri Scheme 설치 체크](etc/exe/custom-uri-scheme.md)
   * [로컬웹에이전트 운영후기](etc/exe/undefined.md)
-* [Nsis 문자열 검색](etc/nsis-1.md)
 * [Monitoring](etc/monitoring/README.md)
   * [1.tempo-grafana-prometheus](etc/monitoring/1.tempo-grafana-prometheus.md)
   * [2. .Net 환경에서의 자동계측](etc/monitoring/2.-.net/README.md)
