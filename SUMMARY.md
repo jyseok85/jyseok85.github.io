@@ -23,6 +23,7 @@
   * [AI](history/page-1/ai/README.md)
     * [Chat 구현](history/page-1/ai/chat.md)
     * [Assistant - Function Calling](history/page-1/ai/assistant-function-calling.md)
+    * [Assistant - Code Generator](history/page-1/ai/assistant-code-generator.md)
   * [.NET 간단한 웹 서버](history/page-1/.net/README.md)
     * [SSL 인증서 적용](history/page-1/.net/ssl.md)
 
