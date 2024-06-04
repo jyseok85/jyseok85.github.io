@@ -20,6 +20,7 @@
 * [2023 \~](history/2023/README.md)
   * [PPT 변환](history/2023/ppt.md)
 * [Page 1](history/page-1/README.md)
+  * [AI](history/page-1/ai.md)
   * [.NET 간단한 웹 서버](history/page-1/.net/README.md)
     * [SSL 인증서 적용](history/page-1/.net/ssl.md)
 
