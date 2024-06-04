@@ -50,7 +50,7 @@ Agora와 Photon 을 조합한 샘플이 Agora에서 제공되고 있습니다. (
 * 실제 서비스하기 위해서는 아고라에 가입하고 APP ID 및 토큰을 발급받아서 사용해야 합니다. 그러나 테스트용으로 사용시 저 샘플의  APP ID를 사용해도 가능합니다. 대신 채널명을 고유하게 변경하여 다른 사람들과 중복되지 않도록 합니다.&#x20;
 * 샘플프로젝트의 SceneHome 씬을 실행후 GameController 에 APP ID 를 넣는 부분이 있습니다.(기본 샘플 ID가 입력되어 있습니다)
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;빌드 옵션에서 WebGL Template를 agoaTemplate2020 으로 변경합니다.(Unity 2020 버전 기준)
 * &#x20;Asset 폴더내에 WebGL Templates 폴더가 있으면 표시됩니다.&#x20;

@@ -12,7 +12,7 @@ _**프로그램만 간단한게 아니라 배포도 간단해야 합니다.**_
 
 ## 파일 게시 옵션
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **ReadyToRun(R2R) 컴파일 사용 (AOT)**
 
