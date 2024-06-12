@@ -82,5 +82,29 @@ if tool_calls:
 
 단지 내부 서비스만 호출하려면, 3번 이후 작업은 필요 없습니다.&#x20;
 
+
+
+Playground 에서 Function 을 등록하면 다음과 같이 바로 테스트가 가능합니다.&#x20;
+
 <figure><img src="https://lh7-us.googleusercontent.com/yvoYcxRL4vg_9rLxUKMKEHU3-AbyZ-pvK69NlXwBdo2pOrbca-DvJ7wFswG3fOQkwKJ6wqtBCMZQwQ8miHZUbrBslWDyXnm_Ep_3-ptL4zW1sufg_wGmhexYhyzPiRoDNrxTfolUvdV8ORCmzCwk=s2048" alt=""><figcaption></figcaption></figure>
+
+여기서 제일 중요한 것은 함수나, 파라메터의 description 입니다.  이 Description 을 얼마나 잘 작성하느냐에 따라서 function call 이 될수도 있고 안될 수도 있습니다.&#x20;
+
+물론 질문을 정확하게 한다면 상관없습니다.&#x20;
+
+그러나 사용자가 항상 연차휴가서를 작성해 달라고 스크립트를 작성하지는 않습니다.&#x20;
+
+그냥 넉두리로 채팅을 할수도 있습니다. "오늘좀 우울해"  이렇게요.
+
+
+
+그러면 AI라면 내일 연차를 작성했습니다. 상신해주세요. 이렇게 나와야 찐 AI 겠죠.
+
+
+
+그럴려면 다음과 같이 description 을 변경하면 됩니다.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+
+
 
