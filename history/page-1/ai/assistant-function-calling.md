@@ -106,5 +106,7 @@ Playground 에서 Function 을 등록하면 다음과 같이 바로 테스트가
 
 <figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
+3.5 버전에서는 감정인식을 제대로 못했지만 4o 버전에서는 감정에 대한 학습도 이뤄졌습니다.&#x20;
 
+버전이 더 올라가면 설명이 없다고 해도 자연스럽게 추천이 될수 있을것 같습니다.&#x20;
 
