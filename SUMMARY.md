@@ -25,6 +25,7 @@
     * [외부 데이터 분석](history/2024/ai/undefined.md)
     * [Assistant - Function Calling](history/2024/ai/assistant-function-calling.md)
     * [Assistant - Code Generator](history/2024/ai/assistant-code-generator.md)
+    * [Assistant - File Search](history/2024/ai/assistant-file-search.md)
   * [.NET 간단한 웹 서버](history/2024/.net/README.md)
     * [SSL 인증서 적용](history/2024/.net/ssl.md)
 
