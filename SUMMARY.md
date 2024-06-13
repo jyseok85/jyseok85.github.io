@@ -21,6 +21,7 @@
   * [PPT 변환](history/2023/ppt.md)
 * [Page 1](history/page-1/README.md)
   * [AI](history/page-1/ai/README.md)
+    * [외부 데이터 분석](history/page-1/ai/undefined.md)
     * [Chat 구현](history/page-1/ai/chat.md)
     * [Assistant - Function Calling](history/page-1/ai/assistant-function-calling.md)
     * [Assistant - Code Generator](history/page-1/ai/assistant-code-generator.md)
