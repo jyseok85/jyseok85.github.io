@@ -31,3 +31,27 @@ app.Run();
 
 <figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
+
+
+## http https 동시적용
+
+{% code title="appsettings.json 수정" %}
+```json
+{
+  "Kestrel": {
+    "Endpoints": {
+      "Http": {
+        "Url": "http://localhost:5000"
+      },
+      "Https": {
+        "Url": "https://localhost:5001",
+        "Certificate": {
+          "Path": "path/to/your/certificate.pfx",
+          "Password": "your-password"
+        }
+      }
+    }
+  }
+}
+```
+{% endcode %}
