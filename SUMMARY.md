@@ -18,6 +18,7 @@
   * [Prometheus & Grafana 로 모니터링](history/2021/prometheus-and-grafana.md)
   * [Postgres Streaming Replication](history/2021/postgres-streaming-replication.md)
 * [2023](history/2023/README.md)
+  * [인쇄 다이얼로그 고도화](history/2023/undefined.md)
   * [PPT 변환 + Word](history/2023/ppt-+-word.md)
 * [2024](history/2024/README.md)
   * [AI](history/2024/ai/README.md)
