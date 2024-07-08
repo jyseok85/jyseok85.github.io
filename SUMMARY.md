@@ -21,6 +21,7 @@
   * [인쇄 다이얼로그 고도화](history/2023/undefined.md)
   * [PPT 변환 + Word](history/2023/ppt-+-word.md)
 * [2024](history/2024/README.md)
+  * [서버 로컬 보안 정책 일괄 변경하기](history/2024/undefined.md)
   * [AI](history/2024/ai/README.md)
     * [Chat 구현](history/2024/ai/chat.md)
     * [외부 데이터 분석](history/2024/ai/undefined.md)
