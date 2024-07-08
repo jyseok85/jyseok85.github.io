@@ -44,11 +44,12 @@
 
 ## Blazor
 
-* [BuildRenderTree 팁](blazor/buildrendertree.md)
 * [.Net5 -> .Net7 변경점](blazor/.net5-greater-than-.net7.md)
-* [Blazor 에 Api Controller 추가](blazor/blazor-api-controller.md)
-* [Blazor 에서 .NET Framework 참조](blazor/blazor-.net-framework.md)
-* [Tips](blazor/tips.md)
+* [Tips](blazor/tips/README.md)
+  * [자식 컨트롤에서 부모 컨트롤 호출 방법](blazor/tips/undefined.md)
+  * [Blazor 에서 .NET Framework 참조](blazor/tips/blazor-.net-framework.md)
+  * [Blazor 에 Api Controller 추가](blazor/tips/blazor-api-controller.md)
+  * [BuildRenderTree 팁](blazor/tips/buildrendertree.md)
 * [Web Viewer 개발](blazor/web-viewer.md)
 * [Web Designer 기본 컨트롤 생성](blazor/web-designer/README.md)
   * [01. Drag & Drop](blazor/web-designer/01.-drag-and-drop.md)
@@ -61,7 +62,6 @@
     * [컨트롤 키보드로 이동](blazor/web-designer/06.-snap-control/undefined.md)
     * [겹치는 컨트롤 빨간색 테두리](blazor/web-designer/06.-snap-control/undefined-1.md)
   * [07. Undo Redo](blazor/web-designer/07.-undo-redo.md)
-* [자식 컨트롤에서 부모 컨트롤 호출 방법](blazor/undefined.md)
 * [Web Report Desinger](blazor/web-report-desinger/README.md)
   * [1. 기본 프로젝트 구성](blazor/web-report-desinger/1..md)
   * [2. 레이아웃 구성](blazor/web-report-desinger/2..md)
