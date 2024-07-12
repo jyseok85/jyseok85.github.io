@@ -6,19 +6,19 @@
 
 브라우저에서 액션을 취한 후 다른 UI가 포커스를 뺏어가면 설치되었다고 체크함.
 
-&#x20;\
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+#### &#x20;즉 위 UI같은 경우 윈도우 레지를 통해서 즉시 응답되므로 정상적인 설치체크가 되지만, 항상 허용으로 체크시에는 실행되는 프로그램에 따라서 UI가 표시되는 시간이 다르므로 실패할 확률이 높음.
+
+\
 _잘못된 스키마를 만들고 호출하면 설치 체크가 안돼야 정상이지만,  호출 후에_ \
 _1. 브라우저의 주소입력창을 선택하거나,_ \
 _2. 윈도우 디렉토리 등에 포커스를 주면 설치되었다고 판단함._&#x20;
 
 \
-모든 브라우저에서 발생하는 현상.
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-팝업 메시지의 내용은&#x20;
-
-응용프로그램 명과 웹사이트 도메인이 출력됨
+팝업 메시지의 내용은 응용프로그램 명과 웹사이트 도메인이 출력됨
 
 <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
