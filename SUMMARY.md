@@ -93,6 +93,7 @@
 
 ## ETC
 
+* [.Net 에서 구글시트가져오기](etc/.net.md)
 * [NSIS](etc/nsis/README.md)
   * [파일에서 텍스트 교체](etc/nsis/undefined.md)
   * [문자열 검색](etc/nsis/undefined-1.md)
