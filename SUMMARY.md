@@ -10,6 +10,7 @@
   * [경영 시뮬레이션 게임 플랫폼 개발(수정필요)](history/2016-2018/undefined.md)
   * [프로그램 배포 시스템 개발](etc/undefined.md)
 * [2020](history/2020/README.md)
+  * [Canvas VS HTML 텍스트 인쇄](history/2020/canvas-vs-html.md)
   * [Unity로 구현한 웹 리포트 뷰어](history/2020/unity.md)
   * [Blazor 로 구현한 웹 리포트 뷰어](history/2020/blazor.md)
   * [Elastic 및 Kibana로 모니터링](history/2020/elastic-kibana.md)

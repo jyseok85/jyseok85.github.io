@@ -50,7 +50,7 @@ Agora와 Photon 을 조합한 샘플이 Agora에서 제공되고 있습니다. (
 * 실제 서비스하기 위해서는 아고라에 가입하고 APP ID 및 토큰을 발급받아서 사용해야 합니다. 그러나 테스트용으로 사용시 저 샘플의  APP ID를 사용해도 가능합니다. 대신 채널명을 고유하게 변경하여 다른 사람들과 중복되지 않도록 합니다.&#x20;
 * 샘플프로젝트의 SceneHome 씬을 실행후 GameController 에 APP ID 를 넣는 부분이 있습니다.(기본 샘플 ID가 입력되어 있습니다)
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;빌드 옵션에서 WebGL Template를 agoaTemplate2020 으로 변경합니다.(Unity 2020 버전 기준)
 * &#x20;Asset 폴더내에 WebGL Templates 폴더가 있으면 표시됩니다.&#x20;
@@ -90,7 +90,7 @@ Agora와 Photon 을 조합한 샘플이 Agora에서 제공되고 있습니다. (
 3. &#x20;프로토타입용 디자인 에셋 구매- 맵 디자인(기본 예제 디자인에서 원활한 플레이가 가능하게 버텍스 줄이기)- 각종 회사 이미지 및 애니메이션 맵에 배치- 캐릭터 선택씬 개발
 4. 여기서 구조최적화 (항상 찾아오는 갈아엎기)- 기존 캐릭터 프리팹에서 전적으로 처리하던것을 삭제하고- 각각 싱글톤 매니저로 방생성 입장 , 화상연결, 캐릭터 생성 등등 개별적으로 조작
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. 각종 부가기능개발- PDF 뷰어- 캐릭터 애니메이션 - 이름 표시하기- 로딩씬구현- 포톤으로 위 모든것 동기화 시키기 + 시야변경 명령하기 등
 

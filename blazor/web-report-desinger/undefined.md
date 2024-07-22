@@ -4,7 +4,7 @@
 
 제가 기존에 알고 있던 테두리는, 모서리를 기준으로 생성되는 것 입니다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 그러나 HTML에서는 위와 같은 기능의 테두리가 없습니다.&#x20;
 
@@ -14,7 +14,7 @@
 
 물론 표를 사용해도 됩니다만, 표를 사용함으로 인하여 다른문제가 발생할 가능성이 있습니다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>외각선은 1px 로 정확히 처리 되었지만, 내부는 2픽셀로 보이는 상태</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>외각선은 1px 로 정확히 처리 되었지만, 내부는 2픽셀로 보이는 상태</p></figcaption></figure>
 
 
 

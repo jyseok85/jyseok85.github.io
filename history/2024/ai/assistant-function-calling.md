@@ -2,7 +2,7 @@
 
 단순 텍스트 분석, 생성이 아니라, 서비스하는 시스템의 내부 함수를 호출하기 위한 기능입니다. &#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>함수호출을 사용하는 이유</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>함수호출을 사용하는 이유</p></figcaption></figure>
 
 왼쪽 기존 프로그램의 기능을 오른쪽처럼 텍스트 입력으로 수행한다고 생각하면 이해하기가 쉽습니다.&#x20;
 
