@@ -22,7 +22,7 @@
 
 다음은 윈도우에 내장된 XPS 드라이버를 사용한 예시 입니다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>위  이미지는  10pt 짜리를 확대한 것 입니다. </p></figcaption></figure>
 
 태그는 깔끔하게 나오며, 역시 캔버스는 이미지로 표현되는지 품질이 저하됩니다.&#x20;
 
