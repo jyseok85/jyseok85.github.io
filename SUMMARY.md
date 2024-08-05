@@ -8,7 +8,7 @@
   * [데이터 가져가는 외부 프로세스 차단 프로그램](history/2012-2014/undefined-1.md)
 * [2016 \~ 2018](history/page-5.md)
   * [경영 시뮬레이션 게임 플랫폼 개발(수정필요)](history/2016-2018/undefined.md)
-  * [프로그램 배포 시스템 개발](etc/undefined.md)
+  * [프로그램 배포 시스템 개발](<etc/undefined (1).md>)
 * [2020](history/2020/README.md)
   * [Canvas VS HTML 텍스트 인쇄](history/2020/canvas-vs-html.md)
   * [Unity로 구현한 웹 리포트 뷰어](history/2020/unity.md)
@@ -94,6 +94,7 @@
 
 ## ETC
 
+* [선제적 배포(타겟배포)의 필요성](etc/undefined.md)
 * [.Net 에서 구글시트가져오기](etc/.net.md)
 * [NSIS](etc/nsis/README.md)
   * [파일에서 텍스트 교체](etc/nsis/undefined.md)
