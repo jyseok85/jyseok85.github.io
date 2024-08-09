@@ -2,7 +2,7 @@
 
 
 
-<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="목표" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="목표" class="gitbook-drawing">
 
 웹으로 전환을 하더라도, 윈도우 응용프로그램을 필수로 사용해야 하는 경우가 있습니다.&#x20;
 
