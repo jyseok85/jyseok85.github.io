@@ -1,4 +1,4 @@
-# Winfom 표시속도개선
+# Winform 표시속도개선
 
 
 
@@ -103,7 +103,7 @@ using (var writer = new StreamWriter(client))
 
 
 그렇게 된다면 최종적으로 다음과 같은 형태로 최초 7초에서 2초로 단축 가능합니다. \
-(실제 제 PC기준 exe 가 실행되는데는 0.2초정도가 소요됩니다. 아래 시간은 단순 예 입니다)
+(실제 제 PC기준 exe 가 실행되는데는 0.2초정도가 소요되어 전체시간이 다르며, 아래 시간은 단순 표시  용  예 입니다)
 
 <img src="../../.gitbook/assets/file.excalidraw (2).svg" alt="최종 결과 2초 만에 UI 표시" class="gitbook-drawing">
 

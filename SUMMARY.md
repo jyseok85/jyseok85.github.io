@@ -33,7 +33,7 @@
   * [.NET 간단한 웹 서버](history/2024/.net/README.md)
     * [SSL 인증서 적용](history/2024/.net/ssl.md)
     * [인증서 비밀번호가 계속 틀리다고 나오는 이유](history/2024/.net/undefined.md)
-  * [Winfom 표시속도개선](history/2024/winfom.md)
+  * [Winform 표시속도개선](history/2024/winform.md)
 
 ## Windows
 
